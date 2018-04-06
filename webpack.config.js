@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const path = require('path');
-const loaderUtils = require('loader-utils');
 const spreadPlugin = require('@babel/plugin-proposal-object-rest-spread');
 
 const extractPlugin = new ExtractTextPlugin({
@@ -12,19 +11,15 @@ const extractPlugin = new ExtractTextPlugin({
   allChunks: true,
 });
 
-const spritesFilename = loaderUtils.interpolateName({resourcePath: 'images/sprites.png'}, 'images/generated/sprites-[hash].png',
-  {
-    context: 'images/sprites.png',
-    content: null,
-    regExp: null,
-  },
-);
-
 module.exports = {
-  entry: ['./src/js/app.js', './src/styles/app.scss'],
+  entry: {
+    'app': './src/js/app.js',
+    'app-rtl': './src/styles/app-rtl.scss',
+    'app-ltr': './src/styles/app-ltr.scss',
+  },
   output: {
     path: `${__dirname}/dist`,
-    filename: 'bundle.js',
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -41,8 +36,15 @@ module.exports = {
               },
             },
             {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+              },
+            },
+            {
               loader: 'sass-loader',
               options: {
+                minimize: true,
                 sourceMap: true,
               },
             },
@@ -88,14 +90,6 @@ module.exports = {
           name: 'fonts/[name].[ext]',
         },
       },
-      {
-        test: /\.styl$/,
-        loader: 'style-loader!css-loader!stylus-loader',
-      },
-      {
-        test: /\.jade$/,
-        loader: 'jade-loader',
-      },
     ],
   },
   resolve: {
@@ -116,12 +110,13 @@ module.exports = {
         glob: '*.png',
       },
       target: {
-        image: path.resolve(__dirname, 'src/' + spritesFilename),
-        css: path.resolve(__dirname, 'src/styles/sprites.scss'),
+        image: path.resolve(__dirname, 'src/images/generated/sprites.png'),
+        css: path.resolve(__dirname, 'src/styles/utils/_sprites.scss'),
       },
       apiOptions: {
-        cssImageRef: '../' + spritesFilename,
+        cssImageRef: '../images/generated/sprites.png',
       },
+      retina: '@2x',
     }),
   ],
 };

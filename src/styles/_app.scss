@@ -1,0 +1,77 @@
+
+@import "base/config";
+
+// Utils (helpers, functions, mixins and etc..)
+@import "utils/typography";
+@import "utils/text";
+@import "utils/retina";
+@import "utils/visually-hidden";
+@import "utils/shapes";
+@import "utils/elements-middle";
+@import "utils/sprites";
+@import "utils/font-face";
+@import "utils/buttons";
+@import "utils/tooltips";
+@import "utils/global";
+
+// Start css (html, body, containers, font and etc..)
+@import "base/fonts";
+@import "base/global";
+@import "base/buttons";
+@import "base/tabs";
+
+
+.content {
+  text-align: center;
+  .title {
+    font-size: 84px;
+    font-weight: 100;
+    @include margin(0, 0, 0, 20px)
+  }
+  .responsive-image {
+    width: auto;
+    height: 80px;
+    opacity: 0.4;
+  }
+  .links {
+    @include margin(40px, 0, 0, 0);
+    & > a {
+      color: #636b6f;
+      padding: 0 25px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      &.website {
+        &:after {
+          content: ' ';
+          display: block;
+          opacity: 0.3;
+          position: absolute;
+          top: -14px;
+          bottom: 0;
+          @include left(7px);
+          @include right(0px);
+          transform: scale(0.4);
+          @include retina-sprite($github-group);
+        }
+      }
+      &.github {
+        &:after {
+          content: ' ';
+          display: block;
+          opacity: 0.3;
+          position: absolute;
+          top: -22px;
+          bottom: 0;
+          @include left(-12px);
+          @include right(0px);
+          transform: scale(0.4);
+          @include retina-sprite($www-group);
+        }
+      }
+    }
+  }
+}
