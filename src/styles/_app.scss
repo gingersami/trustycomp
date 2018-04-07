@@ -1,4 +1,6 @@
 
+@import '~normalize.css/normalize';
+
 @import "base/config";
 
 // Utils (helpers, functions, mixins and etc..)
@@ -19,7 +21,6 @@
 @import "base/global";
 @import "base/buttons";
 @import "base/tabs";
-
 
 .content {
   text-align: center;

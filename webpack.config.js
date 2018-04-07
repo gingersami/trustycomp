@@ -80,7 +80,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 enforce: "pre",
-                exclude: /node_modules/,
+                exclude: /(node_modules|bower_components)/,
                 use: [
                     {
                         loader: 'jshint-loader',
@@ -113,15 +113,6 @@ module.exports = {
                         'scss': 'vue-style-loader!css-loader!sass-loader',
                         'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
                     }
-                    // other vue-loader options go here
-                }
-            },
-            {
-                test: /\.tsx?$/,
-                loader: 'ts-loader',
-                exclude: /node_modules/,
-                options: {
-                    appendTsSuffixTo: [/\.vue$/],
                 }
             },
             {
@@ -156,7 +147,7 @@ module.exports = {
         noInfo: true
     },
     resolve: {
-        extensions: ['.ts', '.js', '.vue', '.json'],
+        extensions: ['.js', '.vue', '.json'],
         modules: ['node_modules', 'spritesmith-generated'],
         alias: {
             'vue$': 'vue/dist/vue.esm.js'

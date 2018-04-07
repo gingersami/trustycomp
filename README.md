@@ -27,6 +27,10 @@ sp-{spriteName}@2x.png
 ### Scss conventions: ###
 
 ### JS Features: ###
+Vue.js
 ES6
 TS
 window attachments!
+
+### CSS Features: ###
+Normalize
