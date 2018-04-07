@@ -36,6 +36,7 @@
   .links {
     @include margin(40px, 0, 0, 0);
     & > a {
+      border-radius: 5px;
       color: #636b6f;
       padding: 0 25px;
       font-size: 12px;
@@ -55,7 +56,7 @@
           @include left(7px);
           @include right(0px);
           transform: scale(0.4);
-          @include retina-sprite($github-group);
+          @include retina-sprite($sp-github-group);
         }
       }
       &.github {
@@ -69,7 +70,7 @@
           @include left(-12px);
           @include right(0px);
           transform: scale(0.4);
-          @include retina-sprite($www-group);
+          @include retina-sprite($sp-www-group);
         }
       }
     }
