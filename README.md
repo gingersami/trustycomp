@@ -20,6 +20,7 @@ Folder for production is: /dist/
 
 ### Sprites: ###
 Sprites should be added to ```/src/images/sprites/icons/```
+
 Sprites names should match ```sp-{spriteName}.png``` or ```sp-{spriteName}@2x.png``` for retina support
 
 ### JS Features: ###
