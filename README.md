@@ -22,7 +22,8 @@ Folder for production is: /dist/
 Sprites should be added to ```/src/images/sprites/icons/```
 
 Sprites names should match ```sp-{spriteName}.png``` or ```sp-{spriteName}@2x.png``` for retina support
-then can be used using ```@include sprite($sp-{spriteName});``` or ```@include retina-sprite($sp-{spriteName}-group);``` for retina sprites
+
+Then they can be used using ```@include sprite($sp-{spriteName});``` or ```@include retina-sprite($sp-{spriteName}-group);``` for retina sprites
 
 ### JS Features: ###
 Vue.js
