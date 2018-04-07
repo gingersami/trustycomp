@@ -3,34 +3,28 @@
 ### Install:
 
 ```
-1. run: "npm install"
+"npm install"
 ```
 
 ### Development: ###
 
 ```
-1. run: npm run dev
-
+npm run dev
 ```
 
 ### Production: ###
+```
+npm run build
+```
 Folder for production is: /dist/
 
 ### Sprites: ###
-sp-{spriteName}.png
-sp-{spriteName}@2x.png
-
-### Fonts: ###
-
-### Text sizes: ###
-
-### Scss conventions: ###
+Sprites should be added to ```/src/images/sprites/icons/```
+Sprites names should match ```sp-{spriteName}.png``` or ```sp-{spriteName}@2x.png``` for retina support
 
 ### JS Features: ###
 Vue.js
 ES6
-TS
-window attachments!
 
 ### CSS Features: ###
 Normalize

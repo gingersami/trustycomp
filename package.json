@@ -2,7 +2,7 @@
   "name": "encoding",
   "version": "",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server & open http://localhost:8080/",
     "build": "webpack",
     "watch": "webpack --watch"
   },
