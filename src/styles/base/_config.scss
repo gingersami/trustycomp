@@ -9,7 +9,7 @@ $breakpoints: (
   'XLmedium': 920px,
   'Lmedium':  845px,
   'medium':   768px,
-  'Smedium':   600px,
+  'Smedium':  600px,
   'Lsmall' :  560px,
   'small':    540px,
   'XMsmall':  500px,
@@ -330,93 +330,5 @@ $text-sizing: (
             'font-size': 20px,
             'line-height': 1,
     ),
-  ),
-  'revolution-main-title': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 26px,
-            'line-height': 1,
-    ),
-    'Lsmall': (
-            'font-family': 'SpoilerHE',
-            'font-size': 18px,
-            'line-height': 1,
-    ),
-  ),
-  'revolution-big-title': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 48px,
-            'line-height': 39px,
-    ),
-    //'Lsmall': (
-    //        'font-family': 'SpoilerHE',
-    //        'font-size': 19px,
-    //        'line-height': 1,
-    //),
-    'small': (
-            'font-family': 'SpoilerHE',
-            'font-size': 22px,
-            'line-height': 1,
-    ),
-  ),
-  'revolution-text': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 20px,
-            'line-height': 1,
-    ),
-    'Lsmall': (
-            'font-family': 'SpoilerHE',
-            'font-size': 14px,
-            'line-height': 1,
-    ),
-    'small': (
-            'font-family': 'SpoilerHE',
-            'font-size': 12px,
-            'line-height': 1,
-    ),
-  ),
-  'wizard-items-title': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 24px,
-            'line-height': 26px,
-    ),
-  ),
-  'wizard-items-desc': (
-      'nomedia': (
-              'font-family': 'SpoilerHE',
-              'font-size': 15px,
-              'line-height': 16px,
-      ),
-  ),
-  'reg-popup-title': (
-          'nomedia': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 34px,
-                  'line-height': 30px,
-          ),
-  ),
-  'huge-size-sign': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 150px,
-      'line-height': 100px,
-    ),
-  ),
-  'magazine-article-main-title': (
-          'nomedia': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 48px,
-                  'line-height': 0.9,
-          ),
-  ),
-  'magazine-article-sub-title': (
-          'nomedia': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 24px,
-                  'line-height': 1.2,
-          ),
   ),
 );

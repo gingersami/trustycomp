@@ -24,6 +24,9 @@ class CollectHtmlFiles {
     getPluginArray(files) {
         return files.map(file => {
             return new HtmlWebpackPlugin({
+                inject: 'head',
+                title: path.parse(file).name,
+                meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
                 template: file,
                 filename: path.basename(file),
             })
@@ -82,9 +85,6 @@ module.exports = {
                     {
                         loader: 'jshint-loader',
                     },
-                    {
-                        loader: 'eslint-loader'
-                    }
                 ]
             },
             {
@@ -101,6 +101,28 @@ module.exports = {
                     },
 
                 ],
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loaders: {
+                        // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
+                        // the "scss" and "sass" values for the lang attribute to the right configs here.
+                        // other preprocessors should work out of the box, no loader config like this necessary.
+                        'scss': 'vue-style-loader!css-loader!sass-loader',
+                        'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+                    }
+                    // other vue-loader options go here
+                }
+            },
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
+                options: {
+                    appendTsSuffixTo: [/\.vue$/],
+                }
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
@@ -129,8 +151,16 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        historyApiFallback: true,
+        noInfo: true
+    },
     resolve: {
+        extensions: ['.ts', '.js', '.vue', '.json'],
         modules: ['node_modules', 'spritesmith-generated'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
     },
     plugins: [
         new CleanWebpackPlugin('./dist'),
