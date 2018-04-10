@@ -158,7 +158,7 @@ module.exports = {
         new SpritesmithPlugin({
             src: {
                 cwd: path.resolve(__dirname, 'src/images/sprites/icons'),
-                glob: 'sp-*.png',
+                glob: '**/sp-*.png',
             },
             target: {
                 image: path.resolve(__dirname, 'src/images/generated/sprites.png'),
