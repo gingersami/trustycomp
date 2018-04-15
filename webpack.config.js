@@ -148,7 +148,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.vue', '.json'],
-        modules: ['node_modules', 'spritesmith-generated'],
+        modules: ['node_modules', 'spritesmith-generated', 'bower_components'],
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
         }
