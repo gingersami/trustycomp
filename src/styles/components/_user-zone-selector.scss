@@ -1,0 +1,5 @@
+.user-zone-selector{
+  display:block;
+  color: $user-zone-font-color;
+  @include responsive-text-size('user-zone-tabs');
+}

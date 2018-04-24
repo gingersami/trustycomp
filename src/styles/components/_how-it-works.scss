@@ -1,0 +1,34 @@
+.how-it-works{
+  display:flex;
+  margin-top: 2%;
+  margin-right:37px;
+  background: #ffffff;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  .how-it-works-box{
+    display:flex;
+    height:60px;
+    flex-direction: row-reverse;
+    .how-it-works-number{
+      //margin-right:5px;
+      margin-left:5px;
+      //margin-right:3px;
+    transform:translateY(-57px);
+    @include responsive-text-size('how_its_works_title')
+    }
+    .how-it-works-box-icon{
+    }
+    #clipboard{
+      transform:translate(-10px,1px);
+    }
+    #coins{
+      transform: translate(-17px,1px);
+    }
+    #agent{
+      transform: translate(9px,1px);
+    }
+    #click{
+      transform:translate(-2px, 1px);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 
 html {
+  @include Material;
   width: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

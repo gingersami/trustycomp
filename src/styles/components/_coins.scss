@@ -1,0 +1,4 @@
+#coins{
+  display:inline-block;
+  @include retina-sprite($sp-coins-group);
+}

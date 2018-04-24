@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  @include responsive-text-size('body');
+  background-color: $startHere;
+  height: 52vh;
+  .interactive-row {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    .icons-left {
+      position: absolute;
+      left: 23%;
+      width: 200px;
+      .seperator-left {
+        margin-left: 6px;
+        margin-right: -10px;
+      }
+      .icon {
+        display: inline-block;
+        &--user {
+          display: inline-block;
+          @include retina-sprite($sp-user-group);
+          margin-left: -13px;
+          margin-top: 24px;
+        }
+        &--mail {
+          display: inline-block;
+          margin-left: 17px;
+          @include retina-sprite($sp-envelope-group);
+        }
+      }
+    }
+
+    .icons-right {
+      position: absolute;
+      @include vertical-center-children(30px);
+      display: flex;
+      align-content: space-between;
+      right: 15%;
+      top: 13px;
+      width: 350px;
+      .seperator-right {
+        margin-top: 15px;
+        margin-left: 15px;
+      }
+
+      .sofa {
+        position: relative;
+        height: 34px;
+        margin-top: -10px;
+        margin-left: 3px;
+      }
+
+      .arrow-down {
+        margin-left: 18px;
+        margin-top: 15px;
+
+      }
+
+      .user-zone-selector {
+        margin-left: 7px;
+        margin-top: 10px;
+      }
+
+      .icon {
+        display: inline-block;
+        &--glass {
+          display: inline-block;
+          margin-left: 6px;
+          margin-top: 11px;
+          @include retina-sprite($sp-glass-group);
+        }
+      }
+      &--logo {
+        position: relative;
+        display: inline-block;
+        width: 90px;
+        height: 36px;
+        margin-top: 1px;
+        margin-left: 40px;
+        background: $title1;
+        border-radius: 2px;
+        &--text {
+          position: absolute;
+          top: -46%;
+          left: 10%;
+          color: white;
+          @include responsive-text-size('logo_font');
+        }
+      }
+    }
+  }
+}
+
+.seperator {
+  display: inline-block;
+  @include retina-sprite($sp-line-group)
+}
+
+.header--title {
+  top: 66px;
+  left: 825px;
+  @include responsive-text-size('logo_font');
+  position: absolute;
+  .car-logo {
+    margin-left: 13px;
+  }
+
+}
+
+.header--text {
+  position: absolute;
+  left: 636px;
+  text-align: center;
+  top: 151px;
+  font-size: 20px;
+  p {
+    margin-bottom: -5px;
+    text-space: 1.1;
+
+  }
+}
+
+//.rounder {
+//  position: relative;
+//  background: black;
+//  &-left {
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    width: 410px;
+//    height: 359px;
+//    border-radius: 0 0 10px 0
+//  }
+//}
+
+
+

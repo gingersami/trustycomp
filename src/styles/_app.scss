@@ -1,8 +1,5 @@
-
 @import '~normalize.css/normalize';
-
 @import "base/config";
-
 // Utils (helpers, functions, mixins and etc..)
 @import "utils/typography";
 @import "utils/text";
@@ -15,65 +12,31 @@
 @import "utils/buttons";
 @import "utils/tooltips";
 @import "utils/global";
-
 // Start css (html, body, containers, font and etc..)
 @import "base/fonts";
 @import "base/global";
 @import "base/buttons";
 @import "base/tabs";
+//Components
+@import "components/header";
+@import "components/logo";
+@import "components/user-zone-selector";
+@import "components/arrow";
+@import 'components/sofa';
+@import "components/car";
+@import "components/how-it-works";
+@import "components/agent";
+@import "components/click";
+@import "components/clipboard";
+@import "components/coins";
+@import "components/arrow-left";
 
 .content {
+  position: absolute;
+  background: #ffffff;
+  border-radius:10px;
+  @include left(410px);
+  top: -78px;
+  width: 1100px;
   text-align: center;
-  .title {
-    font-size: 84px;
-    font-weight: 100;
-    @include margin(0, 0, 0, 20px)
-  }
-  .responsive-image {
-    width: auto;
-    height: 80px;
-    opacity: 0.4;
-  }
-  .links {
-    @include margin(40px, 0, 0, 0);
-    & > a {
-      border-radius: 5px;
-      color: #636b6f;
-      padding: 0 25px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .1rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      position: relative;
-      &.website {
-        &:after {
-          content: ' ';
-          display: block;
-          opacity: 0.3;
-          position: absolute;
-          top: -14px;
-          bottom: 0;
-          @include left(7px);
-          @include right(0px);
-          transform: scale(0.4);
-          @include retina-sprite($sp-github-group);
-        }
-      }
-      &.github {
-        &:after {
-          content: ' ';
-          display: block;
-          opacity: 0.3;
-          position: absolute;
-          top: -22px;
-          bottom: 0;
-          @include left(-12px);
-          @include right(0px);
-          transform: scale(0.4);
-          @include retina-sprite($sp-www-group);
-        }
-      }
-    }
-  }
 }

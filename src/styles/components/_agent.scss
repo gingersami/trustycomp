@@ -1,0 +1,4 @@
+#agent{
+  display:inline-block;
+  @include retina-sprite($sp-agent-group)
+}

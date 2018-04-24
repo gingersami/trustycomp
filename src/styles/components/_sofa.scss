@@ -1,0 +1,17 @@
+.sofa-body {
+  display: inline-block;
+  position: absolute;
+  bottom:-8px;
+  left:1px;
+  z-index: 2;
+  @include retina-sprite($sp-sofa-group);
+}
+
+.sofa-bottom{
+  display:inline-block;
+  position: absolute;
+  z-index:1;
+  left:1px;
+  bottom: -3px;
+  @include retina-sprite($sp-sofa-bottom-group)
+}
