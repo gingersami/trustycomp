@@ -1,6 +1,11 @@
-.arrow-left{
+div[class^="arrow-"]{
   display:inline-block;
+  position:absolute;
+transform:translate(8px,8px);
   @include retina-sprite($sp-arrow-left-group)
 }
 
-.
+.circle{
+  display: inline-block;
+  @include retina-sprite($sp-circle-group)
+}

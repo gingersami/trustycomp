@@ -1,34 +1,81 @@
-.how-it-works{
-  display:flex;
+.how-it-works {
+  display: flex;
   margin-top: 2%;
-  margin-right:37px;
+  margin-right: 37px;
   background: #ffffff;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  .how-it-works-box{
-    display:flex;
-    height:60px;
-    flex-direction: row-reverse;
-    .how-it-works-number{
+  .how-it-works-box {
+    display:inline-flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+
+    //.step{
+    //  display:inline-flex;
+    //  flex-flow:row nowrap;
+    //  justify-content: space-between;
+    //  align-items: center;
+    //  height: 47px;
+    //}
+    .arrow {
+      align-self: center;
+      position: relative;
+      width: 25px;
+      height: 25px;
+      .circle {
+        position: absolute;
+      }
+    }
+    .how-it-works-number {
+      padding: 0 0 2px 3px;
       //margin-right:5px;
-      margin-left:5px;
+      margin-left: 5px;
       //margin-right:3px;
-    transform:translateY(-57px);
-    @include responsive-text-size('how_its_works_title')
+      //transform: translateY(-57px);
+      @include responsive-text-size('how_its_works_title')
     }
-    .how-it-works-box-icon{
+    .how-it-works-box-icon {
+      margin:0 0 0 5px;
     }
-    #clipboard{
-      transform:translate(-10px,1px);
+
+    .step-1{
+      width:109px;
     }
-    #coins{
-      transform: translate(-17px,1px);
+
+    .step-2{
+      width:185px;
     }
-    #agent{
-      transform: translate(9px,1px);
+
+    .step-3{
+      width:150px;
     }
-    #click{
-      transform:translate(-2px, 1px);
+
+    .step-4{
+      width:131px;
     }
+
+    .how-it-works-text{
+      font-size: 18px;
+      font-weight: 300;
+      text-align: right;
+      line-height: 85%;
+      padding: 3px 0 0 0;
+      width: 138px;
+    }
+    //#clipboard {
+    //  transform: translate(-10px, 1px);
+    //}
+    //#coins {
+    //  transform: translate(-17px, 1px);
+    //}
+    //#agent {
+    //  transform: translate(9px, 1px);
+    //}
+    //#click {
+    //  transform: translate(-2px, 1px);
+    //}
   }
 }
+
