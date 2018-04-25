@@ -67,3 +67,12 @@ div[class^="arrow-"]{
   display:inline-block;
   @include retina-sprite($sp-location-group)
 }
+
+.star-full{
+  display:inline-block;
+  @include retina-sprite($sp-star-full-group)
+}
+.star-empty{
+  display:inline-block;
+  @include retina-sprite($sp-star-empty-group)
+}
