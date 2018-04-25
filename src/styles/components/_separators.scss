@@ -1,0 +1,13 @@
+.separator{
+    display: inline-block;
+    @include retina-sprite($sp-line-group)
+}
+
+.separator-short{
+  display:inline-block;
+  @include retina-sprite($sp-separator-short-group)
+}
+.separator-long{
+  display:inline-block;
+  @include retina-sprite($sp-separator-long-group)
+}
