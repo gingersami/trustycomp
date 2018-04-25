@@ -1,8 +1,10 @@
 .header {
   position: relative;
+  margin:auto;
+  width:100%;
+  height: 52%;
   @include responsive-text-size('body');
   background-color: $startHere;
-  height: 52vh;
   .interactive-row {
     position: relative;
     width: 100%;
@@ -51,7 +53,7 @@
         margin-left: 3px;
       }
 
-      .arrow-down {
+      .down-arrow {
         margin-left: 18px;
         margin-top: 15px;
 
@@ -121,18 +123,6 @@
   }
 }
 
-//.rounder {
-//  position: relative;
-//  background: black;
-//  &-left {
-//    position: absolute;
-//    left: 0;
-//    top: 0;
-//    width: 410px;
-//    height: 359px;
-//    border-radius: 0 0 10px 0
-//  }
-//}
 
 
 
