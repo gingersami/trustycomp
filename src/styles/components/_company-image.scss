@@ -1,0 +1,4 @@
+.company-image {
+  @include retina-sprite($sp-company-logo-group);
+  display: block;
+}

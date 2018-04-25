@@ -11,3 +11,8 @@
   display:inline-block;
   @include retina-sprite($sp-separator-long-group)
 }
+
+.separator-xl{
+  display:inline-block;
+  @include retina-sprite($sp-seperator-xl-group)
+}
