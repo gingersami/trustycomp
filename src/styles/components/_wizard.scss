@@ -1,38 +1,39 @@
-.wizard{
+.wizard {
   display: inline-flex;
   @include text-align('right');
   flex-direction: column;
   width: 310px;
   padding-top: 12px;
-  height: 1000px;
-  &-header{
-    &::after{
-      margin-top:15px;
-      margin-left:15px;
-      @include line(307px,$insurance-border);
+  height: 1500px;
+  &-header {
+    &::after {
+      margin-top: 15px;
+      margin-left: 15px;
+      @include line(307px, $insurance-border);
     }
   }
-  &-text{
+  &-text {
     white-space: normal;
     font-size: 14px;
-    &::after{
+    &::after {
 
     }
   }
-  &-questions{
+  &-questions {
     white-space: normal;
     font-size: 15px;
-    margin-top:15px;
-    display:flex;
-    flex-direction:column;
-    p{
+    margin-top: 15px;
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    p {
       width: 200px
     }
   }
 }
 
-.wizard-selectors{
-  display:flex;
+.wizard-selectors {
+  display: flex;
 
   flex-direction: column;
   justify-content: space-between;
@@ -40,21 +41,43 @@
   align-items: flex-end;
   padding-top: 17px;
   select {
-  direction: rtl;
-    margin-right:9px;
+    direction: rtl;
+    @include margin-right(9px);
     height: 39px;
     width: 268px;
     appearance: none;
-    border:$insurance-border 1px solid;
+    border: $insurance-border 1px solid;
     background: #ffffff;
     border-radius: 3px;
 
   }
-    #type{
+  #type {
 
-    }
+  }
 }
 
-.question-1{
-  display:flex;
+.question{
+  width:280px;
+  display: flex;
+  height:70px;
+  flex-direction: row-reverse;
+  padding-bottom:15px;
+  padding-top:15px;
+  border-bottom:1px solid $insurance-border;
+  &:first-child{
+    border-top:1px solid $insurance-border;
+    padding-top:15px;
+  }
+    p {
+      width:100%;
+      margin: 0 auto;
+      padding-top: 14px
+    }
+  div {
+    width: 38px;
+    text-align: center;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid $insurance-border;
+  }
 }

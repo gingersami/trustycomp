@@ -81,3 +81,8 @@ div[class^="arrow-"]{
   display:inline-block;
   @include retina-sprite($sp-calendar-group)
 }
+
+.banner{
+  display:inline-block;
+  @include retina-sprite($sp-banner-group);
+}

@@ -44,11 +44,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 22px;
-  margin-right: 23px;
+  @include margin-right(19px);
   p {
     display: inline-block;
     color: white;
     padding-right: 4px;
+    //@include padding-right(4px);
   }
 }
 
