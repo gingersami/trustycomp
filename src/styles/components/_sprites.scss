@@ -76,3 +76,8 @@ div[class^="arrow-"]{
   display:inline-block;
   @include retina-sprite($sp-star-empty-group)
 }
+
+.calendar{
+  display:inline-block;
+  @include retina-sprite($sp-calendar-group)
+}

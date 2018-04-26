@@ -29,14 +29,13 @@
 @import "components/result";
 @import "components/company-image";
 @import "components/sprites";
+@import "components/wizard";
 
 
 .content {
-  position: absolute;
-  background: #ffffff;
-  border-radius:10px;
-  @include left(410px);
-  top: -78px;
-  width: 1100px;
+  display:flex;
+  margin:0 auto;
+  width:1023px;
   text-align: center;
+  justify-content: space-between;
 }

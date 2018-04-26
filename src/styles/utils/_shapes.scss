@@ -28,3 +28,11 @@
     border-left: $size solid $color;
   }
 }
+
+@mixin line($length, $color){
+  content:"";
+  display:block;
+  width:$length;
+  height:1px;
+  background: $color;
+}
