@@ -38,13 +38,13 @@
 .purchase-container {
   display: flex;
   background: $startHere;
-  border-radius: 50px;
-  width: 125px;
-  height: 35px;
+  border-radius: 18px;
+  width: 122px;
+  height: 36px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 22px;
-  @include margin-right(19px);
+  margin-bottom: 20px;
+  @include margin-right(20px);
   p {
     display: inline-block;
     color: white;
