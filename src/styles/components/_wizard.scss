@@ -15,16 +15,13 @@
   &-text {
     white-space: normal;
     font-size: 14px;
-    &::after {
-
-    }
   }
   &-questions {
     white-space: normal;
     font-size: 15px;
     margin-top: 15px;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     flex-direction: column;
     p {
       width: 200px
@@ -51,28 +48,26 @@
     border-radius: 3px;
 
   }
-  #type {
-
-  }
 }
 
-.question{
-  width:280px;
+.question {
+  width: 280px;
   display: flex;
-  height:70px;
+  height: 70px;
   flex-direction: row-reverse;
-  padding-bottom:15px;
-  padding-top:15px;
-  border-bottom:1px solid $insurance-border;
-  &:first-child{
-    border-top:1px solid $insurance-border;
-    padding-top:15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid $insurance-border;
+  &:first-child {
+    border-top: 1px solid $insurance-border;
+    padding-top: 15px;
   }
-    p {
-      width:100%;
-      margin: 0 auto;
-      padding-top: 14px
-    }
+  p {
+    direction: rtl;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 14px
+  }
   div {
     width: 38px;
     text-align: center;
