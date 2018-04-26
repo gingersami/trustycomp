@@ -35,21 +35,17 @@
 }
 
 .purchase-container {
+  display:flex;
   background: $startHere;
   border-radius: 50px;
   width: 125px;
   height: 35px;
-  margin: 0 13px 52px auto;
-  text-align: center;
-  p{
-    display:inline-block;
-    //margin:0 auto;
-    color:white;
-    margin:9px -54px 0px 1px;
-  }
-  .shopping-cart{
-    margin-top: -8px;
-    margin-left: 54px;
+  justify-content: center;
+  align-items: center;
+  p {
+    display: inline-block;
+    color: white;
+    padding-right: 4px;
   }
 }
 
@@ -57,7 +53,7 @@
   padding-right: 5px;
   &-text {
     direction: rtl;
-    color:$company-info-text;
+    color: $company-info-text;
     width: 400px;
     @include responsive-text-size('body');
     white-space: normal;
@@ -73,34 +69,60 @@
     height: 25px;
     flex-direction: row-reverse;
     margin-right: 1px;
+    align-self: flex-start;
     p {
       font-size: 13px;
       margin: 2px 1px 0 0;
       padding-right: 4px;
     }
   }
-  &-rating{
-    display:flex;
-    width:100px;
-    padding-bottom:50px;
-    margin-top: -29px;
-    margin-left: 4px;
+  &-rating {
+    display: flex;
+    width: 100px;
+    padding-left: 4px;
+    padding-bottom: 13px;
   }
 }
 
 .location {
- margin-right:3px;
-  margin-top:-3px;
+  margin-right: 3px;
+  margin-top: -3px;
 }
 
-.company-description-payment{
-  display:flex;
-  flex-flow:column nowrap;
+.company-description-payment {
+  display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
+  &-text{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &*{
+      margin: 0 auto;
+    }
+    h3{
+      @include responsive-text-size('grid_main_titles');
+      padding-right:15px;
+      padding-top:5px;
+    }
+    .currency{
+      font-size: 14px;
+    }
+
+  }
 }
 
-.separator-xl{
+.separator-xl {
   align-self: center;
-  margin-right: 10px;
+  margin: 0 0 10px 0;
+}
+
+.location-rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  height: 25px;
+  align-items: center;
+  align-content: center;
 }
