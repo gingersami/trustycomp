@@ -1,23 +1,26 @@
 footer {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  //display: flex;
+  //justify-content: center;
+  //align-items: flex-start;
   bottom: 0;
   right: 0;
   width: 100%;
   height: 335px;
   background-color: $title1;
   color: white;
-  text-align: center;
+  @include text-align(center);
   .footer-copyright {
     background-color: $footer-background2;
+    height:100px;
+    width:100%;
   }
 }
 
 .footer-content {
   @include margin-center;
   width: 1200px;
+  height:240px;
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -28,36 +31,53 @@ footer {
   display: inline-flex;
   flex-shrink: 1;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 185px;
   @include text-align('right');
-  width: 250px;
+  width: 350px;
   white-space: normal;
+  &-text {
+    direction: rtl;
+    font-size: 15px;
+    line-height:18px;
+  }
+  &-header {
+    @include margin(15px,0,0,0);
+    font-weight: bold;
+  }
   input {
     direction: rtl;
     border: 0;
     height: 38px;
-    width: 277px;
+    width: 273px;
     border-radius: 30px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    @include margin(0,0,0,73px);
+    @include padding-right(45px);
   }
 }
 
 .main {
   flex-grow: 1;
+  margin-top:6px;
   display: inline-flex;
   flex-direction: row;
-  width: 500px;
+  width: 535px;
   &-social {
+    width:140px;
+    height: 150px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
   &-details {
+    height: 150px;
     display: flex;
     flex-direction: column;
   }
   &-agents {
+    height: 150px;
+    line-height: 18px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -65,13 +85,38 @@ footer {
 }
 
 .footer-right {
+  display: flex;
+  height: 150px;
+  width:250px;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: normal;
+  justify-content:center;
   &-logo {
     background-color: $dark-grey-background;
-    &-text{
+    &-text {
       color: $title1;
       font-size: 22px;
-      padding-top:5px;
+      margin-top: 7px;
+
     }
+  }
+  &-text{
+    padding-top:32px;
+  }
+}
+
+.main-agents-login{
+  height:30px;
+  width:100px;
+  border-radius:25px;
+  align-self:center;
+  background-color:$dark-grey-background;
+  color: $title1;
+  &-text{
+    margin-top:8px;
+    font-size: 13px;
+    font-weight: bold;
   }
 }
 

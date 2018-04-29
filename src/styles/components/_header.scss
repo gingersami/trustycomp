@@ -13,20 +13,18 @@
     height: 60px;
     .icons-left {
       position: absolute;
-      margin-left: 68px;
+      @include margin-left(68px);
       left: 0;
       width: 200px;
       .seperator-left {
-        margin-left: 6px;
-        margin-right: -10px;
+        @include margin(0, -10px, 0, 6px);
       }
       .icon {
         display: inline-block;
         &--user {
           display: inline-block;
           @include retina-sprite($sp-user-group);
-          margin-left: -13px;
-          margin-top: 24px;
+          @include margin(24px, 0, 0, -13px)
         }
         &--mail {
           display: inline-block;

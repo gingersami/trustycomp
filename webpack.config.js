@@ -162,7 +162,7 @@ module.exports = {
             },
             target: {
                 image: path.resolve(__dirname, 'src/images/generated/sprites.png'),
-                css: path.resolve(__dirname, 'src/styles/utils/_sprite-classes.scss'),
+                css: path.resolve(__dirname, 'src/styles/utils/_sprites.scss'),
             },
             apiOptions: {
                 cssImageRef: '../images/generated/sprites.png',

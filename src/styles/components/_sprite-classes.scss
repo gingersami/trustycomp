@@ -1,103 +1,106 @@
-#agent{
-  display:inline-block;
+#agent {
+  display: inline-block;
   @include retina-sprite($sp-agent-group)
 }
-.down-arrow{
-  display:inline-block;
+
+.down-arrow {
+  display: inline-block;
   @include retina-sprite($sp-arrow-group)
 }
 
-.car-logo{
-  display:inline-block;
+.car-logo {
+  display: inline-block;
   @include retina-sprite($sp-car-group)
 }
 
-#click{
+#click {
   @include retina-sprite($sp-click-group)
 }
 
-#clipboard{
-  display:inline-block;
+#clipboard {
+  display: inline-block;
   @include retina-sprite($sp-clipboard-group)
 }
 
-#coins{
-  display:inline-block;
+#coins {
+  display: inline-block;
   @include retina-sprite($sp-coins-group);
 }
 
-.shopping-cart{
-  display:inline-block;
+.shopping-cart {
+  display: inline-block;
   @include retina-sprite($sp-shopping-cart-group);
 }
 
 .sofa-body {
   display: inline-block;
   position: absolute;
-  bottom:-8px;
-  left:1px;
+  bottom: -8px;
+  left: 1px;
   z-index: 2;
   @include retina-sprite($sp-sofa-group);
 }
 
-.sofa-bottom{
-  display:inline-block;
+.sofa-bottom {
+  display: inline-block;
   position: absolute;
-  z-index:1;
-  left:1px;
+  z-index: 1;
+  left: 1px;
   bottom: -3px;
   @include retina-sprite($sp-sofa-bottom-group)
 }
 
-div[class^="arrow-"]{
-  display:inline-block;
-  position:absolute;
-  transform:translate(8px,8px);
+div[class^="arrow-"] {
+  display: inline-block;
+  position: absolute;
+  transform: translate(8px, 8px);
   z-index: 2;
   @include retina-sprite($sp-arrow-left-group)
 }
 
-.circle{
+.circle {
   display: inline-block;
   z-index: 1;
   @include retina-sprite($sp-circle-group)
 }
 
-.location{
-  display:inline-block;
+.location {
+  display: inline-block;
   @include retina-sprite($sp-location-group)
 }
 
-.star-full{
-  display:inline-block;
+.star-full {
+  display: inline-block;
   @include retina-sprite($sp-star-full-group)
 }
-.star-empty{
-  display:inline-block;
+
+.star-empty {
+  display: inline-block;
   @include retina-sprite($sp-star-empty-group)
 }
 
-.calendar{
-  display:inline-block;
+.calendar {
+  display: inline-block;
   @include retina-sprite($sp-calendar-group)
 }
 
-.banner{
-  display:inline-block;
+.banner {
+  display: inline-block;
   @include retina-sprite($sp-banner-group);
 }
 
-//.facebook{
-//  display:inline-block;
-//  @include retina-sprite($sp-facebook-group)
-//}
-//
-//.twitter{
-//  display:inline-block;
-//  @include retina-sprite($sp-twitter-group)
-//}
-//
-//.google{
-//  display:inline-block;
-//  @include retina-sprite($sp-twitter-group)
-//}
+.facebook {
+  display: inline-block;
+  width: 20px;
+  @include retina-sprite($sp-facebook-group)
+}
+
+.twitter {
+  display: inline-block;
+  @include retina-sprite($sp-twitter-group)
+}
+
+.google {
+  display: inline-block;
+  @include retina-sprite($sp-google-group)
+}
