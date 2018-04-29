@@ -1,0 +1,20 @@
+.pagination{
+  padding-top:24px;
+  @include padding-left(41px);
+  display:flex;
+  height:32px;
+  line-height: 32px;
+  width:232px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.pagination-box{
+  border: 0;
+  padding:0;
+  background-color:rgba(0,0,0,0);
+  color:#34455d;
+  height:32px;
+  width:32px;
+  font-weight:bold;
+}

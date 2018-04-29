@@ -86,3 +86,18 @@ div[class^="arrow-"]{
   display:inline-block;
   @include retina-sprite($sp-banner-group);
 }
+
+//.facebook{
+//  display:inline-block;
+//  @include retina-sprite($sp-facebook-group)
+//}
+//
+//.twitter{
+//  display:inline-block;
+//  @include retina-sprite($sp-twitter-group)
+//}
+//
+//.google{
+//  display:inline-block;
+//  @include retina-sprite($sp-twitter-group)
+//}

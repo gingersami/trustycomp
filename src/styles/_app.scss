@@ -19,6 +19,7 @@
 @import "base/tabs";
 //Components
 @import "components/header";
+@import "components/footer";
 @import "components/logo";
 @import "components/user-zone-selector";
 @import "components/how-it-works";
@@ -31,6 +32,8 @@
 @import "components/sprite-classes";
 @import "components/wizard";
 @import "components/banner";
+@import "components/paginator";
+@import "components/footer";
 
 .content {
   display: flex;
@@ -38,4 +41,9 @@
   width: 1023px;
   text-align: center;
   justify-content: space-between;
+}
+
+body{
+  position:relative;
+  height:2800px;
 }
