@@ -104,3 +104,13 @@ div[class^="arrow-"] {
   display: inline-block;
   @include retina-sprite($sp-google-group)
 }
+
+.plus{
+  display:inline-block;
+  @include retina-sprite($sp-plus-group)
+}
+
+.down-arrow-gray{
+  display:inline-block;
+  @include retina-sprite($sp-down-arrow-gray-group)
+}

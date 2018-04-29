@@ -35,7 +35,6 @@
   padding-top: 17px;
   select {
     direction: rtl;
-    @include margin-right(9px);
     height: 39px;
     width: 268px;
     appearance: none;
@@ -43,6 +42,29 @@
     background: #ffffff;
     border-radius: 3px;
   }
+}
+
+.selector{
+  position:relative;
+  height:39px;
+  @include margin-right(9px);
+  width:269px;
+  .down-arrow-gray{
+    position:absolute;
+    top:17px;
+    left:17px;
+  }
+  .plus{
+    position:absolute;
+    top:14px;
+    left:14px;
+  }
+  .calendar{
+    position:absolute;
+    top: 13px;
+    left: 12px;
+  }
+
 }
 
 .question {
@@ -54,7 +76,6 @@
   &:first-child {
     margin-top: 7px;
     border-top: 1px solid $insurance-border;
-    //padding-top: 16px;
   }
   &-text {
     direction: rtl;
@@ -66,8 +87,6 @@
   .answer {
     display: inline-block;
     width: 37px;
-    //margin-top: 20px;
-    //margin-right:25px;
     text-align: center;
     height: 37px;
     border-radius: 3px;
