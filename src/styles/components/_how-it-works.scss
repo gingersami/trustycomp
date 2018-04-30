@@ -1,8 +1,8 @@
 .how-it-works {
   display: flex;
   width: 1100px;
-  @include margin-right(-263px);
-  margin-top: -42px;
+  //@include margin-right(-263px);
+  @include margin(-42px,-78px,0,0);
   z-index: 55;
   border-radius: 10px 10px 0 0;
   background: $greyer-background;

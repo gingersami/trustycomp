@@ -48,7 +48,7 @@ body {
   height: 2800px;
 }
 
-@include respond-between(Xsmall,Smedium){
+@include respond-between(Xsmall,medium){
   .header{
     background-color: green;
   }
@@ -58,16 +58,17 @@ body {
   .wizard {
     display: none;
   }
+
   .content {
     width: 100%;
     .search-results {
       @include margin-center
     }
   }
+
   .header {
     .interactive-row {
       width: 100%;
-
     }
     &--title {
       left: 40%;
@@ -81,11 +82,6 @@ body {
     width: 100%;
     .how-it-works {
       display:none;
-      .arrow-container-1 {
-        transform: translate(13px, 5px);
-      }
-      @include margin-center;
-      width: 100%
     }
   }
   .footer {
