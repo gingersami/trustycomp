@@ -30,10 +30,10 @@
 @import "components/result";
 @import "components/company-image";
 @import "components/sprite-classes";
-@import "components/wizard";
 @import "components/banner";
 @import "components/paginator";
 @import "components/footer";
+@import "components/wizard";
 
 .content {
   display: flex;
@@ -43,7 +43,53 @@
   justify-content: space-between;
 }
 
-body{
-  position:relative;
-  height:2800px;
+body {
+  position: relative;
+  height: 2800px;
+}
+
+@include respond-above(large) {
+  .wizard {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    .search-results {
+      @include margin-center
+    }
+  }
+  .header {
+    .interactive-row {
+      width: 100%;
+
+    }
+    &--title {
+      left: 40%;
+    }
+    &--text {
+      left: 20%;
+    }
+  }
+
+  .results {
+    width: 100%;
+    .how-it-works {
+      .arrow-container-1 {
+        transform: translate(13px, 5px);
+      }
+      @include margin-center;
+      width: 100%
+    }
+  }
+  .footer {
+    &-content {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-above(small) {
+  .header {
+    display: none;
+  }
 }

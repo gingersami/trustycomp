@@ -1,5 +1,5 @@
 .wizard {
-  display: inline-flex;
+    display: inline-flex;
   color: $title2;
   @include text-align('right');
   flex-direction: column;
@@ -41,8 +41,8 @@
     color: $title2;
     height: 39px;
     width: 268px;
+    border: 1px solid $insurance-border;
     appearance: none;
-    border: 1px solid;
     background: #ffffff;
     border-radius: 3px;
     font-size: 13px;

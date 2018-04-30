@@ -62,6 +62,7 @@
   }
   &-header {
     h2 {
+      color:$title1;
       padding-top: 5px;
       @include responsive-text-size('insurance-content')
     }
