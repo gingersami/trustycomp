@@ -93,3 +93,15 @@
   -o-transform: rotate($deg+deg);
   transform: rotate($deg+deg);
 }
+
+
+@mixin respond-between($breakpoint-name,$breakpoint-name2) {
+  $breakpoint-value: breakpoint($breakpoint-name);
+  $breakpoint-value2: breakpoint($breakpoint-name2);
+
+  @if $breakpoint-value {
+    @media screen and (min-width: $breakpoint-value) and (max-width:$breakpoint-value2) {
+      @content;
+    }
+  }
+}

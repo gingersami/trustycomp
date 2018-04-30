@@ -31,9 +31,9 @@
 @import "components/company-image";
 @import "components/sprite-classes";
 @import "components/banner";
+@import "components/wizard";
 @import "components/paginator";
 @import "components/footer";
-@import "components/wizard";
 
 .content {
   display: flex;
@@ -48,7 +48,13 @@ body {
   height: 2800px;
 }
 
-@include respond-above(large) {
+@include respond-between(Xsmall,Smedium){
+  .header{
+    background-color: green;
+  }
+}
+
+@include respond-between(medium, large) {
   .wizard {
     display: none;
   }
@@ -74,6 +80,7 @@ body {
   .results {
     width: 100%;
     .how-it-works {
+      display:none;
       .arrow-container-1 {
         transform: translate(13px, 5px);
       }
@@ -85,11 +92,5 @@ body {
     &-content {
       width: 100%;
     }
-  }
-}
-
-@include respond-above(small) {
-  .header {
-    display: none;
   }
 }
