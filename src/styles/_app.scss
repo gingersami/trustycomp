@@ -48,13 +48,9 @@ body {
   height: 2800px;
 }
 
-@include respond-between(Xsmall,medium){
-  .header{
-    background-color: green;
-  }
-}
 
-@include respond-between(medium, large) {
+
+@include respond-above(large) {
   .wizard {
     display: none;
   }
@@ -88,5 +84,10 @@ body {
     &-content {
       width: 100%;
     }
+  }
+}
+@include respond-above(medium){
+  .header{
+    background-color: green;
   }
 }
