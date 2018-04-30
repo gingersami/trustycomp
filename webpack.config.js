@@ -21,6 +21,7 @@ class CollectHtmlFiles {
     build() {
         return this.getPluginArray(this.getFiles());
     }
+
     getPluginArray(files) {
         return files.map(file => {
             return new HtmlWebpackPlugin({

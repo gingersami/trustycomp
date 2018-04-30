@@ -28,7 +28,7 @@
         }
         &--mail {
           display: inline-block;
-          margin-left: 17px;
+          @include margin(0,0,0,17px);
           @include retina-sprite($sp-envelope-group);
         }
       }
@@ -100,7 +100,6 @@
   .car-logo {
     margin-left: 13px;
   }
-
 }
 
 .header--text {

@@ -50,22 +50,20 @@
     }
   }
 }
-  .step-4{
-    @include margin-left(17px);
+  .step-4.how-it-works-box{
+    justify-content: center;
   }
   .step-3{
-    margin-right:30px;
   }
   .step-2{
-    margin-right:18px;
+    @include margin-right(10px)
   }
 
   .step-1{
-    margin-right:45px;
+    @include margin-right(30px);
   }
 
   .step-3{
-    //padding-left:55px;
     @include padding-left(55px);
   }
   .arrow-1{
@@ -79,4 +77,16 @@
   white-space: pre-wrap;
   word-wrap:break-word;
   font-size: 14px;
+}
+
+.arrow.arrow-container-1{
+  transform:translate(37px,5px);
+}
+
+.arrow.arrow-container-2{
+  transform:translate(-3px,5px);
+}
+
+.arrow.arrow-container-3{
+  transform:translate(38px,5px);
 }

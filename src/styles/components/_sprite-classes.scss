@@ -1,4 +1,4 @@
-#agent {
+.agent {
   display: inline-block;
   @include retina-sprite($sp-agent-group)
 }
@@ -13,16 +13,16 @@
   @include retina-sprite($sp-car-group)
 }
 
-#click {
+.click {
   @include retina-sprite($sp-click-group)
 }
 
-#clipboard {
+.clipboard {
   display: inline-block;
   @include retina-sprite($sp-clipboard-group)
 }
 
-#coins {
+.coins {
   display: inline-block;
   @include retina-sprite($sp-coins-group);
 }
@@ -91,7 +91,7 @@ div[class^="arrow-"] {
 
 .facebook {
   display: inline-block;
-  width: 20px;
+  transform: scale(0.1);
   @include retina-sprite($sp-facebook-group)
 }
 

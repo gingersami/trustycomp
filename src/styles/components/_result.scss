@@ -43,8 +43,7 @@
   height: 36px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  @include margin-right(21px);
+  @include margin(0,25px,20px,0);
   p {
     display: inline-block;
     color: white;
