@@ -6,15 +6,16 @@
 
 .result {
   display: flex;
-  position:relative;
+  position: relative;
   flex-flow: row nowrap;
   flex-direction: row-reverse;
   background-color: #ffffff;
   width: 777px;
-  margin:  12px 0 0 0;
+  margin: 12px 0 0 0;
   border: 1px solid $insurance-border;
   border-radius: 5px;
   height: 142px;
+
   &:first-child {
     margin: 12px 0 0 0;
   }
@@ -28,6 +29,7 @@
   margin-top: 15px;
   border: 1px solid $insurance-border;
   border-radius: 3px;
+
   .company-image {
     position: absolute;
     top: 39px;
@@ -43,7 +45,8 @@
   height: 36px;
   justify-content: center;
   align-items: center;
-  @include margin(0,25px,20px,0);
+  @include margin(0, 25px, 20px, 0);
+
   p {
     display: inline-block;
     color: white;
@@ -52,7 +55,8 @@
 }
 
 .company-description {
-  padding-right: 5px;
+  @include padding(0, 5px, 0, 0);
+
   &-text {
     direction: rtl;
     color: $company-info-text;
@@ -60,29 +64,32 @@
     @include responsive-text-size('body');
     white-space: normal;
   }
+
   &-header {
     h2 {
       padding-top: 5px;
       @include responsive-text-size('insurance-content')
     }
   }
-  &-location {
+
+  &-locatio n {
     display: flex;
     height: 25px;
     flex-direction: row-reverse;
     align-self: flex-start;
     p {
       font-size: 13px;
-      @include margin(2px,1px, 0, 0);
+      @include margin(2px, 1px, 0, 0);
       @include padding-right(4px);
       //padding-right: 4px;
     }
   }
+
   &-rating {
     display: flex;
     width: 100px;
-    @include padding(0, 0,13px, 5px);
-      }
+    @include padding(0, 0, 13px, 5px);
+  }
 }
 
 .location {
@@ -114,7 +121,7 @@
 }
 
 .separator-xl {
-  position:absolute;
+  position: absolute;
   top: 29px;
   @include left(153px);
 }
@@ -126,4 +133,8 @@
   height: 25px;
   align-items: center;
   align-content: center;
+}
+
+@include respond-above('large') {
+
 }

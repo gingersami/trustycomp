@@ -104,7 +104,7 @@ footer {
   justify-content: space-between;
   line-height: 14px;
   &-logo {
-    margin-top:21px;
+    margin-top: 21px;
     background-color: $dark-grey-background;
     &-text {
       color: $title1;
@@ -113,10 +113,8 @@ footer {
 
     }
   }
-    &-text{
-      @include text-align(right);
-    }
   &-text {
+    @include text-align(right);
   }
 }
 
@@ -129,7 +127,7 @@ footer {
   background-color: $dark-grey-background;
   color: $title1;
   &-text {
-    margin-top: 8px;
+    margin-top: 6px;
     font-size: 13px;
     font-weight: bold;
   }

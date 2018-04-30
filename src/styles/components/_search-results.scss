@@ -34,7 +34,7 @@
         @include margin-right(-9px)
       }
       .separator-long{
-        margin-right:9px;
+        @include margin(0,9px,0,0);
       }
       p {
         margin: 2px 19px;

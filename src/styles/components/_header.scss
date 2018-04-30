@@ -43,47 +43,40 @@
       top: 13px;
       width: 350px;
       .seperator-right {
-        margin-top: 15px;
-        margin-left: 15px;
+        @include margin(15px,0,0,15px);
       }
 
       .sofa {
         position: relative;
         height: 34px;
-        margin-top: -10px;
-        margin-left: 3px;
+        @include margin(-10px,0,0,3px);
       }
 
       .down-arrow {
-        margin-left: 18px;
-        margin-top: 15px;
+        @include margin(15px,0,0,18px);
 
       }
 
       .user-zone-selector {
-        margin-left: 7px;
-        margin-top: 10px;
+        @include margin(10px,0,0,7px);
       }
 
       .icon {
         display: inline-block;
         &--glass {
           display: inline-block;
-          margin-left: 6px;
-          margin-top: 11px;
+          @include margin(11px,0,0,6px);
           @include retina-sprite($sp-glass-group);
         }
       }
       &--logo {
         position: relative;
         display: inline-block;
-        margin-top: 1px;
-        margin-left: 40px;
-
+        @include margin(1px,0,0,40px);
         &--text {
           position: absolute;
           top: -17px;
-          left: 9px;
+          @include left(9px);
           color: white;
           @include responsive-text-size('logo_font');
         }
@@ -94,11 +87,11 @@
 
 .header--title {
   top: 66px;
-  left: 825px;
+  @include left(825px);
   @include responsive-text-size('logo_font');
   position: absolute;
   .car-logo {
-    margin-left: 13px;
+    @include margin(0,0,0,13px);
   }
 }
 
@@ -111,11 +104,5 @@
   p {
     margin-bottom: -5px;
     text-space: 1.1;
-
   }
 }
-
-
-
-
-
