@@ -1,17 +1,21 @@
 .wizard {
   display: inline-flex;
+  color: $title2;
   @include text-align('right');
   flex-direction: column;
   width: 310px;
   padding-top: 12px;
   height: 1500px;
   &-header {
+    color: $mobile;
+    @include padding-right(7px);
     &::after {
-      @include margin(15px,0,0,15px);
+      @include margin(15px, 0, 0, 15px);
       @include line(307px, $insurance-border);
     }
   }
   &-text {
+    color: inherit;
     white-space: normal;
     font-size: 14px;
   }
@@ -34,38 +38,38 @@
   padding-top: 17px;
   select {
     direction: rtl;
+    color: $title2;
     height: 39px;
     width: 268px;
     appearance: none;
-    border: $insurance-border 1px solid;
+    border: 1px solid;
     background: #ffffff;
     border-radius: 3px;
-    font-size:13px;
+    font-size: 13px;
     @include padding-right(15px);
   }
 }
 
-.selector{
-  position:relative;
-  height:39px;
+.selector {
+  position: relative;
+  height: 39px;
   @include margin-right(9px);
-  width:269px;
-  .down-arrow-gray{
-    position:absolute;
-    top:17px;
-    left:17px;
+  width: 269px;
+  .down-arrow-gray {
+    position: absolute;
+    top: 17px;
+    left: 17px;
   }
-  .plus{
-    position:absolute;
-    top:14px;
-    left:14px;
+  .plus {
+    position: absolute;
+    top: 14px;
+    left: 14px;
   }
-  .calendar{
-    position:absolute;
+  .calendar {
+    position: absolute;
     top: 13px;
     left: 12px;
   }
-
 }
 
 .question {
@@ -79,6 +83,7 @@
     border-top: 1px solid $insurance-border;
   }
   &-text {
+    color: $title2;
     direction: rtl;
     margin: 0 auto;
     padding-top: 14px;
@@ -93,6 +98,7 @@
     border-radius: 3px;
     border: 1px solid $insurance-border;
     &-text {
+      color: $title2;
       margin-top: 11px;
     }
   }
@@ -104,4 +110,3 @@
   justify-content: space-between;
   width: 100px;
 }
-
