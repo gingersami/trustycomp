@@ -174,10 +174,22 @@ body {
 
 @include respond-above(Smedium) {
   .header {
+    height:290px;
     .interactive-row {
+      background-color:white;
       .icons-left {
         margin: 0;
       }
+    }
+    .header--text{
+      display:none;
+    }
+  }
+  .search-results-header{
+    margin-top:0;
+    h3{
+      margin: 0 auto;
+      width: 175px;
     }
   }
   .search-results-filter {
@@ -187,6 +199,13 @@ body {
     flex-direction: column;
     & > * {
       position: static;
+    }
+  }
+  .result{
+    .company-description{
+      .company-description-text{
+        display:none;
+      }
     }
   }
 }
