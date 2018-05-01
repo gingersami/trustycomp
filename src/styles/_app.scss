@@ -18,8 +18,6 @@
 @import "base/buttons";
 @import "base/tabs";
 //Components
-//Media Queries
-@import "base/media";
 @import "components/header";
 @import "components/footer";
 @import "components/logo";
@@ -36,6 +34,8 @@
 @import "components/wizard";
 @import "components/paginator";
 @import "components/footer";
+//Media Queries
+@import "base/media";
 
 .content {
   display: flex;
@@ -85,8 +85,8 @@ body {
 
 //    Medium breakpoint
 @include respond-above(medium) {
-  body{
-    height:3700px;
+  body {
+    height: 3700px;
   }
   .header {
     .header--text {
@@ -131,7 +131,6 @@ body {
       text-align: center;
       font-size: 19px;
     }
-
   }
   .location-rating-wrapper {
     flex-direction: column;
@@ -140,22 +139,25 @@ body {
     @include margin-center;
   }
   .company-description-payment {
-    &-text{
-      padding:0;
+    &-text {
+      padding: 0;
     }
   }
-  .footer{
-    top:100%;
+  .footer {
+    top: 100%;
     &-content {
       flex-direction: column;
       width: 100%;
-      .contact{
-        padding:0;
+      .contact {
+        padding: 0;
       }
     }
-  }
-  &-copyright{
-    margin-top: 40px;
+    &-right{
+      display:none;
+    }
+    &-copyright {
+      margin-top: 40px;
+    }
   }
 }
 
