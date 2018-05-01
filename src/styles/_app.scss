@@ -81,6 +81,16 @@ body {
       display: none;
     }
   }
+  .footer{
+    .contact{
+      width:260px;
+      input{
+        @include margin-left(25px);
+        width:240px;
+
+      }
+    }
+  }
 }
 
 //    Medium breakpoint
