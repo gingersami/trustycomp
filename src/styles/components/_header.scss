@@ -86,18 +86,19 @@
 }
 
 .header-wrapper {
-    @include margin-center;
-  width:500px;
+  @include margin-center;
+  width: 500px;
   .header--title {
-    @include padding(6px,0,0,140px);
+    @include padding(6px, 0, 0, 155px);
     @include responsive-text-size('logo_font');
+    font-weight: bold;
     .car-logo {
       @include margin(0, 0, 0, 13px);
     }
   }
   .header--text {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.1em;
     p {
       margin-bottom: -5px;
       text-space: 1.1;
