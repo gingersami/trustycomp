@@ -67,11 +67,10 @@ body {
     .interactive-row {
       width: 100%;
     }
-    &--title {
-      @include left(40%)
-    }
-    &--text {
-      @include left(20%);
+    &-wrapper{
+      .header--text{
+        font-size:19px;
+      }
     }
   }
 
@@ -87,7 +86,6 @@ body {
       input{
         @include margin-left(25px);
         width:240px;
-
       }
     }
   }
@@ -169,6 +167,10 @@ body {
       margin-top: 40px;
     }
   }
+}
+
+@include respond-above(Smedium){
+
 }
 
 
