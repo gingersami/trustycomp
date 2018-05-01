@@ -18,6 +18,8 @@
 @import "base/buttons";
 @import "base/tabs";
 //Components
+//Media Queries
+@import "base/media";
 @import "components/header";
 @import "components/footer";
 @import "components/logo";
@@ -34,8 +36,6 @@
 @import "components/wizard";
 @import "components/paginator";
 @import "components/footer";
-//Media Queries
-@import "base/media";
 
 .content {
   display: flex;
@@ -68,10 +68,10 @@ body {
       width: 100%;
     }
     &--title {
-      left: 40%;
+      @include left(40%)
     }
     &--text {
-      left: 20%;
+      @include left(20%);
     }
   }
 
@@ -81,15 +81,13 @@ body {
       display: none;
     }
   }
-  .footer {
-    &-content {
-      width: 100%;
-    }
-  }
 }
 
 //    Medium breakpoint
 @include respond-above(medium) {
+  body{
+    height:3700px;
+  }
   .header {
     .header--text {
       white-space: normal;
@@ -115,7 +113,7 @@ body {
     .company-image-container {
       align-self: flex-end;
       .company-image {
-        top: 1px;
+        top: -4px;
       }
     }
     .separator-xl {
@@ -147,7 +145,19 @@ body {
     }
   }
   .footer{
-    display:none;
+    top:100%;
+    &-content {
+      flex-direction: column;
+      width: 100%;
+      .contact{
+        padding:0;
+      }
+    }
+  }
+  &-copyright{
+    margin-top: 40px;
   }
 }
+
+
 
