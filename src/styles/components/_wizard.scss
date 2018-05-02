@@ -55,10 +55,15 @@
   height: 39px;
   @include margin(0,10px,9px,0);
   width: 273px;
-  .down-arrow-gray {
-    position: absolute;
-    top: 18px;
-    left: 21px;
+  &:first-child{
+    .down-arrow-gray{
+      top:18px;
+    }
+  }
+  .down-arrow-gray{
+    position:absolute;
+    top:17px;
+    left:21px;
   }
   .plus {
     position: absolute;
@@ -92,9 +97,9 @@
 
   .answer {
     display: inline-block;
-    width: 37px;
+    width: 38px;
     text-align: center;
-    height: 37px;
+    height: 38px;
     border-radius: 3px;
     border: 1px solid $insurance-border;
     &-text {
@@ -105,7 +110,8 @@
 }
 
 .answers {
-  display: flex;
+  display: block;
+  padding-right:9px;
   margin-top: 19px;
   justify-content: space-between;
   width: 100px;

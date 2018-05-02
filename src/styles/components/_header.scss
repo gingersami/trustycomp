@@ -54,7 +54,6 @@
 
       .down-arrow {
         @include margin(15px, 0, 0, 18px);
-
       }
 
       .user-zone-selector {
@@ -93,17 +92,16 @@
     @include responsive-text-size('logo_font');
     font-weight: bold;
     .car-logo {
-      @include margin(2px, 0, 0, 21px);
+      @include margin(2px, 0, 0, 20px);
     }
   }
 
-  .header--title{
+  .header--title {
     @include responsive-text-size('insurance-header');
   }
   .header--text {
     @include responsive-text-size('insurance-content');
     text-align: center;
-    //font-size: 1.1em;
   }
 }
 

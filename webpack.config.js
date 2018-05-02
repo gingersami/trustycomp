@@ -18,6 +18,7 @@ class CollectHtmlFiles {
     constructor(path) {
         this.path = path;
     }
+
     build() {
         return this.getPluginArray(this.getFiles());
     }
@@ -33,6 +34,7 @@ class CollectHtmlFiles {
             })
         });
     }
+
     getFiles() {
         return glob.sync(this.path + '/*.html');
     }
@@ -48,6 +50,7 @@ module.exports = {
         path: `${__dirname}/dist`,
         filename: '[name].js',
     },
+    devtool:'inline-source-map',
     module: {
         rules: [
             {
@@ -71,7 +74,7 @@ module.exports = {
                         {
                             loader: 'sass-loader',
                             options: {
-                                minimize: true,
+                                // minimize: true,
                                 sourceMap: true,
                             },
                         },
@@ -167,6 +170,9 @@ module.exports = {
             },
             apiOptions: {
                 cssImageRef: '../images/generated/sprites.png',
+            },
+            spritesmithOptions: {
+                padding: 15
             },
             retina: '@2x',
         }),

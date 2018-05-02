@@ -61,12 +61,19 @@
 .how-it-works-box.step-4 {
   width: 168px;
   justify-content: flex-start;
+  .how-it-works-number{
+    padding-right: 6px;
+    padding-left:2px;
+  }
 }
 
 .how-it-works-box.step-3 {
   width: 231px;
   margin-top: -3px;
   justify-content: flex-start;
+  .how-it-works-number{
+    padding-right:2px;
+  }
 }
 
 .how-it-works-box.step-2 {
