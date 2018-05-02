@@ -21,11 +21,13 @@
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 11px;
+    padding-top: 3px;
     &-icon {
       margin-left: 3px;
     }
     .how-it-works-number {
+      font-weight: 100;
+      color: $mobile;
       @include responsive-text-size('how_its_works_title')
     }
     .text-1 {
@@ -55,15 +57,17 @@
   direction: rtl;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 100;
+  color:$mobile;
 }
 
 .how-it-works-box.step-4 {
   width: 168px;
   justify-content: flex-start;
   .how-it-works-number{
-    padding-right: 6px;
-    padding-left:2px;
+    padding-right: 7px;
+    padding-left:10px;
   }
 }
 
@@ -72,7 +76,7 @@
   margin-top: -3px;
   justify-content: flex-start;
   .how-it-works-number{
-    padding-right:2px;
+    padding-right:4px;
   }
 }
 
@@ -89,14 +93,14 @@
 }
 
 .arrow-container-1 {
-  transform: translate(23px, 5px);
+  transform: translate(23px, 1px);
 }
 
 .arrow-container-2 {
-  transform: translate(28px, 5px);
+  transform: translate(28px, 1px);
 }
 
 .arrow-container-3 {
-  transform: translate(39px, 5px);
+  transform: translate(39px, 1px);
 }
 
