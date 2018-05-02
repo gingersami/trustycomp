@@ -1,48 +1,43 @@
 .how-it-works {
   display: flex;
-  width: 1100px;
-  //@include margin-right(-263px);
-  @include margin(-42px,-78px,0,0);
+  width: 100%;
+  @include margin(-42px, -79px, 0, 0);
   z-index: 55;
   border-radius: 10px 10px 0 0;
   background: $greyer-background;
   flex-direction: row-reverse;
   justify-content: space-around;
-    .arrow {
-      align-self: center;
-      position: relative;
-      width: 25px;
-      height: 25px;
-      .circle {
-        position: absolute;
-      }
+  .arrow {
+    align-self: center;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    .circle {
+      position: absolute;
     }
+  }
   .how-it-works-box {
-    display: flex;
+    display: inline-flex;
     flex-flow: row-reverse nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    width:280px;
-    padding-top:11px;
+    padding-top: 11px;
+    &-icon {
+      margin-left: 3px;
+    }
     .how-it-works-number {
-      padding: 0 0 2px 3px;
-      @include margin-left(5px);
       @include responsive-text-size('how_its_works_title')
     }
-    .how-it-works-box-icon {
-      margin: 0 0 0 5px;
-    }
-
     .text-1 {
-      width: 109px;
+      width: 136px;
     }
 
     .text-2 {
-      width: 180px;
+      width: 182px;
     }
 
     .text-3 {
-      width: 135px;
+      width: 140px;
     }
 
     .text-4 {
@@ -50,43 +45,51 @@
     }
   }
 }
-  .step-4.how-it-works-box{
-    justify-content: center;
-  }
-  .step-3{
-  }
-  .step-2{
-    @include margin-right(10px)
-  }
 
-  .step-1{
-    @include margin-right(30px);
-  }
-
-  .step-3{
-    @include padding-left(55px);
-  }
-  .arrow-1{
-    position:absolute;
-    transform:translate(8px,8px);
-  }
-
+.arrow-1 {
+  position: absolute;
+  transform: translate(8px, 8px);
+}
 
 .how-it-works-text {
   direction: rtl;
   white-space: pre-wrap;
-  word-wrap:break-word;
+  word-wrap: break-word;
   font-size: 14px;
 }
 
-.arrow.arrow-container-1{
-  transform:translate(37px,5px);
+.how-it-works-box.step-4 {
+  width: 168px;
+  justify-content: flex-start;
 }
 
-.arrow.arrow-container-2{
-  transform:translate(-3px,5px);
+.how-it-works-box.step-3 {
+  width: 231px;
+  margin-top: -3px;
+  justify-content: flex-start;
 }
 
-.arrow.arrow-container-3{
-  transform:translate(38px,5px);
+.how-it-works-box.step-2 {
+  justify-content: flex-start;
+  width: 263px;
+  margin-top: -1px;
 }
+
+.step-1 {
+  margin-top: -3px;
+  width: 207px;
+  padding-right: 18px;
+}
+
+.arrow-container-1 {
+  transform: translate(23px, 5px);
+}
+
+.arrow-container-2 {
+  transform: translate(28px, 5px);
+}
+
+.arrow-container-3 {
+  transform: translate(39px, 5px);
+}
+

@@ -3,9 +3,9 @@ footer {
   //display: flex;
   //justify-content: center;
   //align-items: flex-start;
-  bottom: 0;
-  right: 0;
+  //top: 100%;
   width: 100%;
+  bottom: 0;
   height: 335px;
   background-color: $title1;
   color: white;
@@ -34,7 +34,7 @@ footer {
   justify-content: flex-start;
   height: 185px;
   @include text-align('right');
-  padding-top: 56px;
+  @include margin(57px,0,0,7px);
   line-height: 0;
   width: 350px;
   white-space: normal;
@@ -102,10 +102,10 @@ footer {
   flex-direction: column;
   align-items: flex-end;
   white-space: normal;
-  justify-content: space-between;
+  justify-content: flex-start;
   line-height: 14px;
   &-logo {
-    margin-top: 21px;
+    @include margin(21px,4px,15px,0);
     background-color: $dark-grey-background;
     &-text {
       color: $title1;
@@ -122,7 +122,7 @@ footer {
 .main-agents-login {
   height: 28px;
   width: 111px;
-  @include margin(0, 12px, 0, 0);
+  @include margin(0, 19px, 0, 0);
   border-radius: 25px;
   align-self: center;
   background-color: $dark-grey-background;
@@ -137,15 +137,19 @@ footer {
 .main-social-facebook {
   display: flex;
   width: 100px;
-  justify-content: flex-end;
+  justify-content: space-between;
   line-height: 22px;
+  @include text-align(right);
+  @include padding(0,4px,0,6px);
   margin-top: -2px;
   @include margin-center;
   &-logo {
     display: inline-block;
     width: 20px;
-    @include padding-left(5px);
     height: 20px;
+  }
+  &-text{
+    width:62px;
   }
 }
 
@@ -154,14 +158,18 @@ footer {
   display: flex;
   line-height: 22px;
   margin-top: 8px;
-  justify-content: flex-end;
+  @include padding(0,4px,0,6px);
+  @include text-align(right);
+  justify-content: space-between;
   padding-bottom: 6px;
   @include margin-center;
   &-logo {
     display: inline-block;
     width: 20px;
-    @include padding-left(5px);
     height: 20px;
+  }
+  &-text{
+    width:62px;
   }
 }
 
@@ -169,14 +177,18 @@ footer {
   display: flex;
   width: 100px;
   line-height: 22px;
-  justify-content: flex-end;
+  @include text-align(right);
+  @include padding(0,4px,0,6px);
+  justify-content: space-between;
   padding-bottom: 24px;
   @include margin-center;
   &-logo {
     display: inline-block;
-    @include padding-left(5px);
     width: 20px;
     height: 20px;
+  }
+  &-text{
+    width:62px;
   }
 }
 

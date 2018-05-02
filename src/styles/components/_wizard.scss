@@ -22,7 +22,7 @@
   &-questions {
     white-space: normal;
     font-size: 15px;
-    margin-top: 15px;
+    @include margin(32px,8px,0,0);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -40,7 +40,7 @@
     direction: rtl;
     color: $title2;
     height: 39px;
-    width: 268px;
+    width: 267px;
     border: 1px solid $insurance-border;
     appearance: none;
     background: #ffffff;
@@ -53,29 +53,29 @@
 .selector {
   position: relative;
   height: 39px;
-  @include margin-right(9px);
-  width: 269px;
+  @include margin(0,10px,9px,0);
+  width: 273px;
   .down-arrow-gray {
     position: absolute;
-    top: 17px;
-    left: 17px;
+    top: 18px;
+    left: 21px;
   }
   .plus {
     position: absolute;
     top: 14px;
-    left: 14px;
+    left: 18px;
   }
   .calendar {
     position: absolute;
     top: 13px;
-    left: 12px;
+    left: 16px;
   }
 }
 
 .question {
   width: 270px;
   display: flex;
-  height: 78px;
+  height: 80px;
   flex-direction: row-reverse;
   border-bottom: 1px solid $insurance-border;
   &:first-child {

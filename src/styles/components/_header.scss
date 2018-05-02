@@ -93,16 +93,17 @@
     @include responsive-text-size('logo_font');
     font-weight: bold;
     .car-logo {
-      @include margin(0, 0, 0, 13px);
+      @include margin(2px, 0, 0, 21px);
     }
   }
+
+  .header--title{
+    @include responsive-text-size('insurance-header');
+  }
   .header--text {
+    @include responsive-text-size('insurance-content');
     text-align: center;
-    font-size: 1.1em;
-    p {
-      margin-bottom: -5px;
-      text-space: 1.1;
-    }
+    //font-size: 1.1em;
   }
 }
 

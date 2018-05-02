@@ -40,14 +40,18 @@
 .content {
   display: flex;
   margin: 0 auto;
-  width: 1023px;
+  width: 1025px;
   text-align: center;
   justify-content: space-between;
 }
 
 body {
   position: relative;
-  height: 2800px;
+  height: 2415px;
+}
+.wrapper{
+  min-height:100%;
+  position: relative;
 }
 
 //  Large Breakpoints

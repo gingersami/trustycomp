@@ -6,25 +6,25 @@
 
 .result {
   display: flex;
-  position:relative;
+  position: relative;
   flex-flow: row nowrap;
   flex-direction: row-reverse;
   background-color: #ffffff;
-  width: 777px;
-  margin:  12px 0 0 0;
+  width: 779px;
+  height: 144px;
+  @include margin(10px, 0, 2, 2px);
   border: 1px solid $insurance-border;
   border-radius: 5px;
-  height: 142px;
   &:first-child {
-    margin: 12px 0 0 0;
+    @include margin(12px, 0, 2px, 2px);
   }
 }
 
 .company-image-container {
   position: relative;
-  width: 179px;
-  height: 110px;
-  @include margin-right(14px);
+  width: 181px;
+  height: 112px;
+  @include margin-right(15px);
   margin-top: 15px;
   border: 1px solid $insurance-border;
   border-radius: 3px;
@@ -43,16 +43,18 @@
   height: 36px;
   justify-content: center;
   align-items: center;
-  @include margin(0,25px,20px,0);
+  @include margin(0, 10px, 20px, 0);
   p {
     display: inline-block;
     color: white;
-    @include padding-right(4px);
+  }
+  .shopping-cart {
+    @include margin(-2px, -3px, 0, 0);
   }
 }
 
 .company-description {
-  @include padding(0,5px,0,0);
+  @include padding(0, 5px, 0, 0);
   &-text {
     direction: rtl;
     color: $company-info-text;
@@ -62,7 +64,7 @@
   }
   &-header {
     h2 {
-      color:$title1;
+      color: $title1;
       padding-top: 5px;
       @include responsive-text-size('insurance-content')
     }
@@ -74,26 +76,27 @@
     align-self: flex-start;
     p {
       font-size: 13px;
-      @include margin(2px,1px, 0, 0);
+      @include margin(2px, 1px, 0, 0);
       @include padding-right(4px);
     }
   }
   &-rating {
     display: flex;
-    width: 100px;
-    @include padding(0, 0,13px, 5px);
-      }
+    width: 106px;
+    @include padding(0, 0, 13px, 6px);
+  }
 }
 
 .location {
-  @include margin(-3px,3px,0,0);
+  @include margin(-3px, 2px, 0, 0);
 }
 
 .company-description-payment {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
+  @include padding(0,14px,0,0);
   justify-content: space-around;
   &-text {
     padding-top: 19px;
@@ -113,7 +116,7 @@
 }
 
 .separator-xl {
-  position:absolute;
+  position: absolute;
   top: 29px;
   @include left(153px);
 }

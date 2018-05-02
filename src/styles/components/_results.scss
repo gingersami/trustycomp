@@ -1,6 +1,7 @@
 .results{
   display:flex;
-  width:100%;
+  width:1100px;
+  @include margin-center;
   background-color:$greyer-background;
   align-items: center;
   justify-content: center;

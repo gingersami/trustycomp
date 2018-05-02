@@ -1,9 +1,14 @@
 
 html {
+  box-sizing: border-box;
   @include Material;
   width: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {

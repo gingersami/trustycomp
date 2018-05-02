@@ -1,19 +1,19 @@
 .search-results {
   @include text-align('right');
-  //margin: 0 auto;
   flex-flow: row nowrap;
-  //width: 780px;
-  height: 1000px;
+  height: 100%;
   .separator-short {
     margin: 0 2px;
   }
   &-filter {
+    width:779px;
     position: relative;
-    height: 15px;
+    height: 47px;
     background: #ffffff;
     font-size: 14px;
     letter-spacing: -0.8px;
     padding: 15px;
+    @include margin(0,0,0,2px);
     border: 1px solid $insurance-border;
     border-radius: 0 0 5px 5px;
     .filter-option {
@@ -31,10 +31,10 @@
       left: 0;
       .down-arrow{
         margin-top:5px;
-        @include margin-right(-9px)
+        @include margin-right(-10px)
       }
       .separator-long{
-        @include margin(0,9px,0,0);
+        @include margin(0,10px,0,0);
       }
       p {
         margin: 2px 19px;
@@ -42,9 +42,10 @@
     }
   }
   &-header {
-
+    width:779px;
     padding: 10px 16px 15px 0;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 2px;
+    @include margin(10,0,0,2px);
     border-radius: 5px 5px 0 0;
     border-top: 1px solid $insurance-border;
     border-left: 1px solid $insurance-border;
