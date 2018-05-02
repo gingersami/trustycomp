@@ -66,10 +66,10 @@
     white-space: normal;
   }
   &-header {
-    h2 {
+    p {
       color: $title1;
       padding-top: 5px;
-      @include responsive-text-size('insurance-content')
+      @include responsive-text-size('grid_main_titles')
     }
   }
   &-location {
@@ -109,7 +109,7 @@
       @include padding-right(15px);
     }
     p {
-      font-size: 15px;
+      font-size: 13px;
       margin: 0;
     }
     .currency {

@@ -8,6 +8,7 @@
   height: 1500px;
   &-header {
     color: $mobile;
+    font-size:22px;
     @include padding-right(7px);
     &::after {
       @include margin(15px, 0, 0, 15px);

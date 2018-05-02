@@ -57,8 +57,8 @@ body {
 
 //  Large Breakpoints
 @include respond-above(large) {
-  .interactive-row>*{
-    display:none;
+  .interactive-row > * {
+    display: none;
   }
   .wizard {
     display: none;
@@ -69,23 +69,30 @@ body {
       @include margin-center;
       &-filter {
         width: 100%;
-        height:70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
         flex-direction: row-reverse;
-        &-right{
-          @include padding(10px,20px,10px,20px);
+        &-right {
+          height: 40px;
+          position: static;
+          @include padding(10px, 20px, 10px, 20px);
 
-          border:1px solid $insurance-border;
-        .number-rating,.agent-rating,.separator-short{
-          display:none;
-        }
-        }
-        &-left{
-          .separator-short,.separator-long{
-            display:none;
+          border: 1px solid $insurance-border;
+          .number-rating, .agent-rating, .separator-short {
+            display: none;
           }
-          @include padding(10px,20px,10px,20px);
-          margin-left:25px;
-          border:1px solid $insurance-border
+        }
+        &-left {
+          height: 40px;
+          margin-right: 50px;
+          position: static;
+          .separator-short, .separator-long {
+            display: none;
+          }
+          @include padding(10px, 20px, 10px, 20px);
+          margin-left: 25px;
+          border: 1px solid $insurance-border
         }
       }
     }
@@ -141,13 +148,27 @@ body {
       width: 100%;
       @include padding(10px, 0, 15px, 0);
       h3 {
+        text-align: center;
         @include margin-right(5%);
       }
     }
   }
   .result {
     width: 100%;
-    height: 100px;
+    height: 150px;
+    .company-image-container{
+      height:115px;
+      width:100px;
+      .company-image{
+        transform:scale(0.5);
+        left:-18px;
+      }
+    }
+    .location-rating-wrapper{
+      flex-direction: column-reverse;
+      width: 73px;
+      margin-right: 18px;
+    }
   }
   .company-description {
     padding: 0;
@@ -156,9 +177,10 @@ body {
       margin: 0 auto;
     }
     &-text {
-      margin: 0 auto;
-      text-align: center;
-      font-size: 19px;
+      display:none;
+      //margin: 0 auto;
+      //text-align: center;
+      //font-size: 19px;
     }
   }
   .location-rating-wrapper {
@@ -214,7 +236,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    }
+  }
   .result {
     .company-description {
       .company-description-text {

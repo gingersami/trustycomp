@@ -49,7 +49,7 @@
       .sofa {
         position: relative;
         height: 34px;
-        @include margin(-10px, 0, 0, 3px);
+        @include margin(-10px, 0, 0, 4px);
       }
 
       .down-arrow {
@@ -57,7 +57,9 @@
       }
 
       .user-zone-selector {
-        @include margin(10px, 0, 0, 7px);
+        font-size: 24px;
+        font-weight: 800;
+        @include margin(11px, 0, 0, 6px);
       }
 
       .icon {
@@ -71,7 +73,7 @@
       &--logo {
         position: relative;
         display: inline-block;
-        @include margin(1px, 0, 0, 40px);
+        @include margin(1px, 0, 0, 41px);
         &--text {
           position: absolute;
           top: -17px;
@@ -86,22 +88,32 @@
 
 .header-wrapper {
   @include margin-center;
-  width: 500px;
+  width: 1100px;
   .header--title {
-    @include padding(6px, 0, 0, 155px);
-    @include responsive-text-size('logo_font');
+    @include padding(0, 0, 0, 456px);
     font-weight: bold;
+    h1 {
+      @include responsive-text-size('large-page-header-title');
+      font-weight: bold;
+      color: $title1;
+    }
     .car-logo {
-      @include margin(2px, 0, 0, 20px);
+      @include margin(-2px, 0, 0, 13px);
+      &-text{
+        padding-top:37px;
+        margin:0;
+      }
     }
   }
 
-  .header--title {
-    @include responsive-text-size('insurance-header');
-  }
   .header--text {
-    @include responsive-text-size('insurance-content');
+    color:$title1;
+    @include responsive-text-size('large-page-header-desc');
+    height: 124px;
+    font-weight: bold;
     text-align: center;
+    line-height: 13px;
+
   }
 }
 
