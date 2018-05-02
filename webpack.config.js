@@ -171,9 +171,9 @@ module.exports = {
             apiOptions: {
                 cssImageRef: '../images/generated/sprites.png',
             },
-            spritesmithOptions: {
-                padding: 15
-            },
+            // spritesmithOptions: {
+            //     padding: 15
+            // },
             retina: '@2x',
         }),
         extractPlugin,
