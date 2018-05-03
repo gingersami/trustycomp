@@ -19,12 +19,9 @@ body {
   @include rtl {
     direction: rtl;
   }
-}
-
-// Containers
-body {
 font-family: 'SpoilerHE';
 background-color:$greyer-background;
+
 }
 
 .clearfix {
@@ -33,6 +30,24 @@ background-color:$greyer-background;
     content: '';
     clear: both;
   }
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  width: 1025px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+body {
+  position: relative;
+  height: 2415px;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
 }
 @include font-face("SpoilerHE",'../fonts/fbspoilersp-regularwebfont',300,normal,woff)
 @include font-face("SpoilerHE",'../fonts/fbspoileren-bold-webfont',500,normal,woff)

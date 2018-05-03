@@ -16,7 +16,7 @@
       @include margin-left(68px);
       left: 0;
       width: 200px;
-      .seperator-left {
+      .separator-left {
         @include margin(0, -10px, 0, 6px);
       }
       .icon {
@@ -42,7 +42,7 @@
       right: 0;
       top: 13px;
       width: 350px;
-      .seperator-right {
+      .separator-right {
         @include margin(15px, 0, 0, 15px);
       }
 
