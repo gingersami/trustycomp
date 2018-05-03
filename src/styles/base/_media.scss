@@ -43,6 +43,7 @@
       display: none;
     }
     &-wrapper {
+      width: 100%;
       .header--text {
         font-size: 19px;
       }
@@ -123,9 +124,6 @@
     }
     &-text {
       display: none;
-      //margin: 0 auto;
-      //text-align: center;
-      //font-size: 19px;
     }
   }
   .location-rating-wrapper {
@@ -141,11 +139,16 @@
   }
   .footer {
     top: 100%;
+
     &-content {
       flex-direction: column;
       width: 100%;
       .contact {
+        margin-top: 0;
         padding: 0;
+      }
+      .main {
+        width: 100%;
       }
     }
     &-right {

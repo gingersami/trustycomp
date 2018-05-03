@@ -24,7 +24,7 @@
     white-space: normal;
     font-size: 17px;
     align-self:flex-end;
-    padding-right:10px;
+    @include padding(0,10px,0,0);
     margin-top:-10px;
     line-height:22px;
   }
@@ -103,8 +103,8 @@
   &-text {
     color: $title2;
     direction: rtl;
-    margin: 0 auto;
-    padding-top: 21px;
+    margin: auto;
+    //padding-top: 21px;
     width: 164px;
   }
 

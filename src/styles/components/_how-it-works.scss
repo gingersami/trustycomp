@@ -23,7 +23,7 @@
     align-items: center;
     padding-top: 3px;
     &-icon {
-      margin-left: 3px;
+      @include margin(0,0,0,3px);
     }
     .how-it-works-number {
       font-weight: 100;
@@ -66,8 +66,7 @@
   width: 168px;
   justify-content: flex-start;
   .how-it-works-number {
-    padding-right: 7px;
-    padding-left: 10px;
+    @include padding(0,7px,0,10px);
   }
 }
 
@@ -76,8 +75,7 @@
   margin-top: -3px;
   justify-content: flex-start;
   .how-it-works-number {
-    padding-left: 8px;
-    padding-right: 4px;
+    @include padding(0,4px,0,8px);
   }
 }
 
@@ -86,14 +84,14 @@
   width: 263px;
   margin-top: -1px;
   .how-it-works-number {
-    padding-left: 10px;
+    @include padding(0,0,0,10px);
   }
 }
 
 .step-1 {
   margin-top: -3px;
   width: 207px;
-  padding-right: 18px;
+  @include padding(0,18px,0,0);
 }
 
 .arrow-container-1 {
