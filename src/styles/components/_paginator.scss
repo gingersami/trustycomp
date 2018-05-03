@@ -1,5 +1,5 @@
 .pagination{
-  padding-top:24px;
+  padding-top:19px;
   @include padding-left(41px);
   display:flex;
   height:32px;
@@ -10,10 +10,10 @@
 }
 
 .pagination-box{
-  font-size:18px;
-  @include margin(0,10px,0,0);
+  font-size:22px;
+  @include margin(0,8px,0,0);
   border: 0;
-  padding:0;
+  padding: 0 0 0 4px;
   background-color:rgba(0,0,0,0);
   color:#34455d;
   height:32px;
