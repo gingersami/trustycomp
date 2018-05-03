@@ -16,7 +16,7 @@
   border: 1px solid $insurance-border;
   border-radius: 5px;
   &:first-child {
-    @include margin(12px, 0, 2px, 2px);
+    @include margin(9px, 0, 2px, 2px);
   }
   &:hover{
     background-color: #e3f7f9;
@@ -46,7 +46,7 @@
   height: 36px;
   justify-content: center;
   align-items: center;
-  @include margin(0, 10px, 20px, 0);
+  @include margin(0, 10px, 23px, 0);
   p {
     display: inline-block;
     color: white;
@@ -57,18 +57,23 @@
 }
 
 .company-description {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   @include padding(0, 5px, 0, 0);
   &-text {
     direction: rtl;
     color: $company-info-text;
     width: 400px;
+    margin-top:-6px;
     @include responsive-text-size('body');
     white-space: normal;
   }
   &-header {
+    //padding-top:11px;
     p {
       color: $title1;
-      padding-top: 5px;
+      margin:0;
       @include responsive-text-size('grid_main_titles')
     }
   }
@@ -78,7 +83,7 @@
     flex-direction: row-reverse;
     align-self: flex-start;
     p {
-      font-size: 13px;
+      font-size: 16px;
       @include margin(2px, 1px, 0, 0);
       @include padding-right(4px);
     }
@@ -86,12 +91,12 @@
   &-rating {
     display: flex;
     width: 106px;
-    @include padding(0, 0, 13px, 6px);
+    @include padding(0, 0, 9px, 6px);
   }
 }
 
 .location {
-  @include margin(-3px, 2px, 0, 0);
+  @include margin(-1px, 2px, 0, 0);
 }
 
 .company-description-payment {
@@ -102,19 +107,28 @@
   @include padding(0,14px,0,0);
   justify-content: space-around;
   &-text {
-    padding-top: 19px;
-    h3 {
+    padding-top: 25px;
+    .cost {
       margin: 0;
-      @include responsive-text-size('grid_main_titles');
+      font-size:35px;
+      font-weight: 100;
+      //@include responsive-text-size('revolution_grid_text');
       @include padding-right(15px);
+      @include margin(-3px,0,0,0);
     }
     p {
-      font-size: 13px;
-      margin: 0;
+      color: $mobile;
+      font-weight: 100;
+      font-size: 15px;
+      text-align: center;
+      padding-right: 17px;
+      @include margin(-4px,0,0,0);
     }
-    .currency {
-      font-size: 14px;
+    .currency{
+      font-size: 20px;
+      @include margin(0,-6px,0,0);
     }
+  ;
   }
 }
 

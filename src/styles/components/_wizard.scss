@@ -9,7 +9,7 @@
   &-header {
     color: $mobile;
     font-size:22px;
-    margin-top:17px;
+    margin-top:9px;
     @include padding-right(10px);
     &::after {
       @include margin(13px, 0, 0, 3px);

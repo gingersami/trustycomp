@@ -1,12 +1,8 @@
 footer {
   position: absolute;
-  //display: flex;
-  //justify-content: center;
-  //align-items: flex-start;
-  //top: 100%;
   width: 100%;
   bottom: 0;
-  height: 335px;
+  height: 343px;
   background-color: $title1;
   color: white;
   @include text-align(center);
@@ -34,17 +30,25 @@ footer {
   justify-content: flex-start;
   height: 185px;
   @include text-align('right');
-  @include margin(57px,0,0,7px);
+  @include margin(57px, 0, 0, 7px);
   line-height: 0;
   width: 350px;
   white-space: normal;
   &-text {
     direction: rtl;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 100;
+    width: 300px;
+    @include padding(0, 3px, 0, 0);
+    letter-spacing: 0.4px;
+    align-self: flex-end;
     line-height: 18px;
   }
   &-header {
-    @include margin(15px, 0, 0, 0);
+    font-size: 20px;
+    @include padding-right(4px);
+    letter-spacing: 0.3px;
+    @include margin(18px, 0, 0, 0);
     font-weight: bold;
   }
   .contact-text-input {
@@ -52,19 +56,22 @@ footer {
     border: 0;
     height: 38px;
     width: 273px;
+    letter-spacing: 0.8px;
     border-radius: 30px;
     font-size: 14px;
-    @include margin(0, 0, 0, 73px);
+    @include margin(-6px, 0, 0, 73px);
     @include padding-right(45px);
   }
 }
 
 .main {
   flex-grow: 1;
-  margin-top: 6px;
   display: inline-flex;
   flex-direction: row;
+  font-weight: 100;
   width: 535px;
+  margin-top: -2px;
+  letter-spacing: 0.9px;
   &-social {
     width: 140px;
     height: 150px;
@@ -72,12 +79,29 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    &-header {
+      font-weight: 700;
+      font-size: 19px;
+      @include padding(0,0,0,11px);
+    }
   }
   &-details {
     height: 150px;
     display: flex;
-    line-height: 21px;
+    line-height: 26px;
+    justify-content: flex-start;
+    margin-top: -4px;
     flex-direction: column;
+    align-items: flex-end;
+    &-header{
+      margin-bottom:3px;
+      padding-right:10px;
+      font-size:19px;
+      font-weight:700;
+    }
+    &-terms,&-policy,&-contact{
+      padding-right:12px;
+    }
   }
   &-agents {
     height: 150px;
@@ -85,12 +109,25 @@ footer {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    &-header{
+      letter-spacing: 0.3px;
+      padding-left:42px;
+      padding-top:1px;
+      font-weight:700;
+      font-size:20px;
+    }
     &-contact {
+      font-size: 18px;
+      letter-spacing: 0;
+      padding-left: 35px;
       padding-bottom: 13px;
       margin: 0;
     }
     &-signup {
-      margin: 0;
+      font-size:18px;
+      letter-spacing:0;
+      @include padding(0,15px,8px,0);
+      @include margin(-12,0,0,0);
     }
   }
 }
@@ -105,7 +142,7 @@ footer {
   justify-content: flex-start;
   line-height: 14px;
   &-logo {
-    @include margin(21px,4px,15px,0);
+    @include margin(21px, 4px, 15px, 0);
     background-color: $dark-grey-background;
     &-text {
       color: $title1;
@@ -122,14 +159,15 @@ footer {
 .main-agents-login {
   height: 28px;
   width: 111px;
-  @include margin(0, 19px, 0, 0);
+  @include margin(-1, 22px, 0, 0);
   border-radius: 25px;
   align-self: center;
   background-color: $dark-grey-background;
   color: $title1;
   &-text {
-    margin-top: 6px;
-    font-size: 13px;
+    @include margin(5px,0,0,3px);
+    letter-spacing: 0.7px;
+    font-size: 15px;
     font-weight: bold;
   }
 }
@@ -140,16 +178,16 @@ footer {
   justify-content: space-between;
   line-height: 22px;
   @include text-align(right);
-  @include padding(0,4px,0,6px);
-  margin-top: -2px;
+  @include padding(0, 0, 0, 11px);
+  margin-top: -8px;
   @include margin-center;
   &-logo {
     display: inline-block;
     width: 20px;
     height: 20px;
   }
-  &-text{
-    width:62px;
+  &-text {
+    width: 62px;
   }
 }
 
@@ -157,19 +195,19 @@ footer {
   width: 100px;
   display: flex;
   line-height: 22px;
-  margin-top: 8px;
-  @include padding(0,4px,0,6px);
+  margin-top: 10px;
+  @include padding(0, 0, 0, 11px);
   @include text-align(right);
   justify-content: space-between;
-  padding-bottom: 6px;
+  padding-bottom: 11px;
   @include margin-center;
   &-logo {
     display: inline-block;
     width: 20px;
     height: 20px;
   }
-  &-text{
-    width:62px;
+  &-text {
+    width: 62px;
   }
 }
 
@@ -178,7 +216,7 @@ footer {
   width: 100px;
   line-height: 22px;
   @include text-align(right);
-  @include padding(0,4px,0,6px);
+  @include padding(0, 0, 0, 11px);
   justify-content: space-between;
   padding-bottom: 24px;
   @include margin-center;
@@ -187,8 +225,8 @@ footer {
     width: 20px;
     height: 20px;
   }
-  &-text{
-    width:62px;
+  &-text {
+    width: 62px;
   }
 }
 

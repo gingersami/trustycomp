@@ -3,15 +3,17 @@
   flex-flow: row nowrap;
   height: 100%;
   .separator-short {
-    margin: 0 2px;
+    @include margin(-1px,6px,-1px,6px);
   }
   &-filter {
+    color:$company-info-text;
+      letter-spacing: 0px;
+    font-weight: 100;
     width:779px;
     position: relative;
     height: 47px;
     background: #ffffff;
-    font-size: 14px;
-    letter-spacing: -0.8px;
+    font-size: 16px;
     padding: 15px;
     border: 1px solid $insurance-border;
     border-radius: 0 0 5px 5px;
@@ -20,20 +22,26 @@
     }
     &-right {
       position: absolute;
-      right: 20px;
+      right: 17px;
+      top:13px;
+      .down-arrow{
+        margin-right:3px;
+        margin-bottom: 2px;
+      }
     }
     &-left {
       display: flex;
       flex-direction: row-reverse;
       position: absolute;
       width: 185px;
-      left: 0;
+      left: -8;
+      top: 11px;
       .down-arrow{
         margin-top:5px;
         @include margin-right(-10px)
       }
       .separator-long{
-        @include margin(0,10px,0,0);
+        @include margin(0,0,0,-10px);
       }
       p {
         margin: 2px 19px;
@@ -56,4 +64,8 @@
       margin: inherit;
     }
   }
+}
+
+.sort-by{
+  padding-left:6px;
 }
