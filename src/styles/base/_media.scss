@@ -17,7 +17,6 @@
           height: 40px;
           position: static;
           @include padding(10px, 20px, 10px, 20px);
-
           border: 1px solid $insurance-border;
           .number-rating, .agent-rating, .separator-short {
             display: none;
@@ -39,16 +38,21 @@
   }
 
   .header {
+    height:290px;
     .interactive-row {
       display: none;
     }
     &-wrapper {
-      width: 100%;
+      width: 70vw;
+      padding-top:50px;
       .header--text {
-        font-size: 19px;
+        display:none;
       }
     }
     .header--title {
+      width:50%;
+      padding:0;
+      margin:auto;
       &::after, &::before {
         display: none;
       }
@@ -79,7 +83,6 @@
   }
   .header {
     .header--title {
-      @include padding(6px, 0, 0, 140px);
     }
     .header--text {
       white-space: normal;
@@ -100,23 +103,30 @@
     }
   }
   .result {
+    .separator-xl{
+      margin-top:36px;
+      position:static;
+    }
     width: 100%;
     height: 150px;
     .company-image-container {
+      flex:1;
       height: 115px;
-      width: 100px;
+      min-width: 100px;
       .company-image {
-        transform: scale(0.5);
+        transform: scale(0.6);
         left: -18px;
       }
     }
     .location-rating-wrapper {
       flex-direction: column-reverse;
+      @include margin-center;
+      padding-top:25px;
       width: 73px;
-      margin-right: 18px;
     }
   }
   .company-description {
+    flex:4;
     padding: 0;
     &-header {
       width: 220px;
@@ -133,6 +143,7 @@
     @include margin-center;
   }
   .company-description-payment {
+    flex:2;
     &-text {
       padding: 0;
     }

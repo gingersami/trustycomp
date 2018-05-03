@@ -3,12 +3,12 @@
   flex-flow: row nowrap;
   height: 100%;
   .separator-short {
-    @include margin(-1px,6px,-1px,6px);
+    @include margin(-1px, 6px, -1px, 6px);
   }
   &-filter {
-    color:$company-info-text;
-      letter-spacing: 0;
-    width:779px;
+    color: $company-info-text;
+    letter-spacing: 0;
+    width: 779px;
     position: relative;
     height: 47px;
     background: #ffffff;
@@ -21,10 +21,10 @@
     }
     &-right {
       position: absolute;
-      top:13px;
+      top: 13px;
       @include right(17px);
-      .down-arrow{
-        @include margin(0,3px,2px,0);
+      .down-arrow {
+        @include margin(0, 3px, 2px, 0);
       }
     }
     &-left {
@@ -34,22 +34,22 @@
       width: 185px;
       @include left(-8px);
       top: 11px;
-      .down-arrow{
-        margin-top:5px;
+      .down-arrow {
+        margin-top: 5px;
         @include margin-right(-10px)
       }
-      .separator-long{
-        @include margin(0,0,0,-10px);
+      .separator-long {
+        @include margin(0, 0, 0, -10px);
       }
       p {
-        @include margin(2px,19px,2px,19px);
+        @include margin(2px, 19px, 2px, 19px);
       }
     }
   }
   &-header {
-    width:779px;
-    @include padding(10px,16px,15px,0);
-    @include margin(5px,0,0,0);
+    width: 779px;
+    @include padding(10px, 16px, 15px, 0);
+    @include margin(5px, 0, 0, 0);
     border-radius: 5px 5px 0 0;
     border-top: 1px solid $insurance-border;
     border-left: 1px solid $insurance-border;
@@ -57,12 +57,12 @@
     background: $greyer-background;
     h3 {
       color: $mobile;
-      font-size:23px;
+      font-size: 23px;
       margin: inherit;
     }
   }
 }
 
-.sort-by{
-  padding-left:6px;
+.sort-by {
+  padding-left: 6px;
 }
