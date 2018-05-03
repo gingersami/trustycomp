@@ -76,6 +76,7 @@
   margin-top: -3px;
   justify-content: flex-start;
   .how-it-works-number{
+    padding-left:8px;
     padding-right:4px;
   }
 }
@@ -84,6 +85,9 @@
   justify-content: flex-start;
   width: 263px;
   margin-top: -1px;
+  .how-it-works-number{
+    padding-left: 10px;
+  }
 }
 
 .step-1 {

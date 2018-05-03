@@ -73,7 +73,7 @@
       &--logo {
         position: relative;
         display: inline-block;
-        @include margin(1px, 0, 0, 41px);
+        @include margin(1px, 0, 0, 40px);
         &--text {
           position: absolute;
           top: -17px;
@@ -112,8 +112,9 @@
     height: 124px;
     font-weight: bold;
     text-align: center;
-    line-height: 13px;
-
+    line-height: 5px;
+    margin-top:-4px;
+    @include padding(0,0,0,80px);
   }
 }
 

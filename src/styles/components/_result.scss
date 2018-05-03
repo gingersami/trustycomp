@@ -49,6 +49,8 @@
   @include margin(0, 10px, 23px, 0);
   p {
     display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     color: white;
   }
   .shopping-cart {
@@ -65,12 +67,12 @@
     direction: rtl;
     color: $company-info-text;
     width: 400px;
+    font-weight: 100;
     margin-top:-6px;
     @include responsive-text-size('body');
     white-space: normal;
   }
   &-header {
-    //padding-top:11px;
     p {
       color: $title1;
       margin:0;
