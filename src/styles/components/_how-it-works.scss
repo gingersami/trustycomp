@@ -59,15 +59,15 @@
   word-wrap: break-word;
   font-size: 18px;
   font-weight: 100;
-  color:$mobile;
+  color: $mobile;
 }
 
 .how-it-works-box.step-4 {
   width: 168px;
   justify-content: flex-start;
-  .how-it-works-number{
+  .how-it-works-number {
     padding-right: 7px;
-    padding-left:10px;
+    padding-left: 10px;
   }
 }
 
@@ -75,9 +75,9 @@
   width: 231px;
   margin-top: -3px;
   justify-content: flex-start;
-  .how-it-works-number{
-    padding-left:8px;
-    padding-right:4px;
+  .how-it-works-number {
+    padding-left: 8px;
+    padding-right: 4px;
   }
 }
 
@@ -85,7 +85,7 @@
   justify-content: flex-start;
   width: 263px;
   margin-top: -1px;
-  .how-it-works-number{
+  .how-it-works-number {
     padding-left: 10px;
   }
 }

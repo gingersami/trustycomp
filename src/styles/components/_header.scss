@@ -99,22 +99,44 @@
     }
     .car-logo {
       @include margin(-1px, 6, 0, 15px);
-      &-text{
-        padding-top:35px;
-        margin:0;
+      &-text {
+        padding-top: 35px;
+        margin: 0;
       }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 305px;
+      left: 0px;
+      display: block;
+      width: 411px;
+      height: 59px;
+      border-bottom-right-radius: 10px;
+      background-color: $startHere;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 305px;
+      right: 0;
+      display: block;
+      width: 333px;
+      height: 59px;
+      border-bottom-left-radius: 10px;
+      background-color: $startHere;
     }
   }
 
   .header--text {
-    color:$title1;
+    color: $title1;
     @include responsive-text-size('large-page-header-desc');
     height: 124px;
     font-weight: bold;
     text-align: center;
     line-height: 5px;
-    margin-top:-4px;
-    @include padding(0,0,0,80px);
+    margin-top: -4px;
+    @include padding(0, 0, 0, 80px);
   }
 }
 
