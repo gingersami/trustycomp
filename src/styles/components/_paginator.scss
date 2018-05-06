@@ -1,10 +1,9 @@
 .pagination{
-  padding-top:19px;
-  @include padding-left(41px);
+  @include padding(19px,0,0,41px);
   display:flex;
   height:32px;
   line-height: 32px;
-  width:400px;
+  width:36%;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }

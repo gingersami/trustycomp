@@ -1,4 +1,4 @@
-//  Large Breakpoints
+//  Large Breakpoint
 @include respond-above(large) {
   .wizard {
     display: none;
@@ -20,7 +20,7 @@
           width: 185px;
           height: 40px;
           position: static;
-          margin-left:5px;
+          margin-left: 5px;
           @include padding(10px, 20px, 10px, 20px);
           border: 1px solid $insurance-border;
           border-radius: 3px;
@@ -30,7 +30,7 @@
         }
         &-left {
           max-width: 220px;
-          margin-right:5px;
+          margin-right: 5px;
 
           text-align: center;
           flex: 1;
@@ -90,11 +90,9 @@
 //    Medium breakpoint
 @include respond-above(medium) {
   body {
-    height: 1900px;
+    height: 1870px;
   }
   .header {
-    .header--title {
-    }
     .header--text {
       white-space: normal;
       height: 190px;
@@ -115,7 +113,7 @@
   }
   .result {
     .separator-xl {
-      margin-top: 36px;
+      margin-top: 0;
       position: static;
     }
     width: 100%;
@@ -129,20 +127,20 @@
         left: -20px;
       }
     }
+
     .location-rating-wrapper {
       flex-direction: column-reverse;
       @include margin-center;
-      padding-top: 25px;
+      //padding-top: 25px;
+      padding:0;
       width: 73px;
+      margin-right:14%;
+      height:76px;
     }
   }
   .company-description {
     flex: 4;
     padding: 0;
-    &-header {
-      width: 220px;
-      margin: 0 auto;
-    }
     &-text {
       display: none;
     }
@@ -161,23 +159,28 @@
   }
   .footer {
     top: 100%;
-
+    height: 150px;
     &-content {
+      height: 100%;
       flex-direction: column;
       width: 100%;
       .contact {
         margin-top: 0;
         padding: 0;
+        &>*{
+          text-align: center;
+        }
       }
       .main {
-        width: 100%;
+        display: none
       }
     }
     &-right {
       display: none;
     }
     &-copyright {
-      margin-top: 40px;
+      height: 40px;
+      margin-top: -3px;
     }
   }
 }
@@ -202,15 +205,43 @@
       width: 175px;
     }
   }
+
   .search-results-filter {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   .result {
+    border-top:1px solid $insurance-border;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    border-radius: 0;
+    margin:0;
+    .separator-xl {
+      margin-top: 15px;
+    }
+    &:last-child{
+      border-bottom:1px solid $insurance-border;
+    }
+    .company-image-container{
+      @include padding-right(10px);
+    }
     .company-description {
+      &-header{
+        font-weight: 100;
+      }
+      &-payment{
+        padding:0;
+      }
       .company-description-text {
         display: none;
+      }
+      .location-rating-wrapper {
+        justify-content: space-around;
+        margin-right: 13px;
+        padding-top: 10px;
       }
     }
   }
@@ -218,6 +249,25 @@
     width: 55px;
     p {
       display: none;
+    }
+  }
+  .company-description-payment{
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  &-text{
+    .cost{
+      padding-right:28px;
+    }
+  }
+}
+
+@include respond-above(XMsmall){
+  .result{
+    .company-description-payment{
+      align-self:flex-end;
+      height:70px;
+      align-items: baseline;
     }
   }
 }
