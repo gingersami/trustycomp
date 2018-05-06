@@ -1,19 +1,19 @@
-
-// Breakpoints 
+// Breakpoints
 $breakpoints: (
-  'nomedia':  4000px,
-  'xxlarge':  1400px,
-  'xlarge':   1140px,
-  'mlarge':   1024px,
-  'large':    992px,
-  'XLmedium': 920px,
-  'Lmedium':  845px,
-  'medium':   768px,
-  'Smedium':  600px,
-  'Lsmall' :  560px,
-  'small':    540px,
-  'XMsmall':  500px,
-  'Xsmall':   385px,
+        'nomedia': 4000px,
+        'xxlarge': 1400px,
+        'xlarge': 1140px,
+        'main':1180px,
+        'mlarge': 1024px,
+        'large': 992px,
+        'XLmedium': 920px,
+        'Lmedium': 845px,
+        'medium': 768px,
+        'Smedium': 600px,
+        'Lsmall' : 560px,
+        'small': 540px,
+        'XMsmall': 500px,
+        'Xsmall': 385px,
 );
 
 // Set Colors
@@ -55,285 +55,283 @@ $login-popup-text: #506074;
 $revolution_grid_border: #e6ebee;
 $edit_box_text: #4e626b;
 $edit_box_text: #4e626b;
-$company-info-text:#457183;
+$company-info-text: #457183;
 
 // VARIABLES
-$main-width:1247px;
+$main-width: 1247px;
 
 // Font awesome path
 $fa-font-path: "../../bower_components/font-awesome/fonts";
 
 // Set typography
 $text-sizing: (
-  'body': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 16px,
-      'line-height': 16px,
-    )
-  ),
-  'logo_font': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 22px,
-      'line-height': 22px,
-    )
-  ),
-  'user-zone-tabs': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 19px,
-            'line-height': 19px,
-    )
-  ),
-  'insurance-header': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 20px,
-            'line-height': 20px,
-    ),
-    'Lsmall': (
-            'font-family': 'SpoilerHE',
-            'font-size': 17px,
-            'line-height': 17px,
-    )
-  ),
-  'insurance-content': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 18px,
-      'line-height': 18px,
-    ),
-    'Lsmall': (
-      'font-family': 'SpoilerHE',
-      'font-size': 17px,
-      'line-height': 17px,
-    )
-  ),
-  'large-page-header-title': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 55px,
-            'line-height': 55px,
-    ),
-    'small': (
-            'font-family': 'SpoilerHE',
-            'font-size': 35px,
-            'line-height': 35px,
-    )
-  ),
-  'large-page-header-desc': (
-          'nomedia': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 26px,
-                  'line-height': 30px,
-          ),
-          'medium': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 22px,
-                  'line-height': 24px,
-          ),
-          'Lsmall': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 20px,
-                  'line-height': 24px,
-          )
-  ),
-
-  'search_intro': (
-    'nomedia': (
-        'font-family': 'SpoilerHE',
-        'font-size': 88px,
-        'line-height': 80px,
-    ),
-    'large': (
-        'font-family': 'SpoilerHE',
-        'font-size': 70px,
-        'line-height': 70px,
-    ),
-    'medium': (
-      'font-family': 'SpoilerHE',
-      'font-size': 60px,
-      'line-height': 60px,
-    ),
-    'Lsmall': (
-      'font-family': 'SpoilerHE',
-      'font-size': 50px,
-      'line-height': 50px,
-    ),
-    'small': (
-      'font-family': 'SpoilerHE',
-      'font-size': 35px,
-      'line-height': 35px,
-    )
-  ),
-  'search_intro_sub': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 35px,
-            'line-height': 35px,
-    ),
-    'large': (
-            'font-family': 'SpoilerHE',
-            'font-size': 30px,
-            'line-height': 30px,
-    ),
-    'medium': (
-            'font-family': 'SpoilerHE',
-            'font-size': 28px,
-            'line-height': 28px,
-    ),
-    'Lsmall': (
-            'font-family': 'SpoilerHE',
-            'font-size': 24px,
-            'line-height': 24px,
-    ),
-    'small': (
-            'font-family': 'SpoilerHE',
-            'font-size': 18px,
-            'line-height': 18px,
-    )
-  ),
-  'search_input': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 20px,
-      'line-height': 20px,
-    ),
-  'small': (
-          'font-family': 'SpoilerHE',
-          'font-size': 16px,
-          'line-height': 16px,
-  ),
-
-  ),
-  'logo_font2': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 20px,
-      'line-height': 20px,
-    ),
-    'xlarge': (
-      'font-family': 'SpoilerHE',
-      'font-size': 15px,
-      'line-height': 15px,
-    )
-  ),
-  'revolution_grid_title': (
-    'nomedia': (
-      'font-family': ('SpoilerHE','SpoilerEN'),
-      'font-size': 28px,
-      'line-height': 1,
-    ),
-    'large': (
-      'font-family': 'SpoilerHE',
-      'font-size': 25px,
-      'line-height': 1,
-    ),
-    'medium': (
-      'font-family': 'SpoilerHE',
-      'font-size': 22px,
-      'line-height': 1,
-    ),
-    'small': (
-        'font-family': 'SpoilerHE',
-        'font-size': 22px,
-        'line-height': 1,
-    ),
-    'Lsmall': (
-        'font-family': 'SpoilerHE',
-        'font-size': 22px,
-        'line-height': 1,
-    ),
-  ),
-  'revolution_grid_title_big': (
-          'nomedia': (
-                  'font-family': ('SpoilerHE','SpoilerEN'),
-                  'font-size': 40px,
-                  'line-height': 1,
-          ),
-          'large': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 32px,
-                  'line-height': 1,
-          ),
-          'medium': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 30px,
-                  'line-height': 1,
-          ),
-          'small': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 28px,
-                  'line-height': 1,
-          ),
-          'Lsmall': (
-                  'font-family': 'SpoilerHE',
-                  'font-size': 28px,
-                  'line-height': 1,
-          ),
-  ),
-  'revolution_grid_text': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 20px,
-      'line-height': 1,
-    ),
-  ),
-  'how_its_works_grid_title': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 24px,
-      'line-height': 1,
-    ),
-    'small': (
-      'font-family': 'SpoilerHE',
-      'font-size': 20px,
-      'line-height': 1,
-    ),
-  ),
-  'how_its_works_title': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 48px,
-    ),
-    'small': (
-      'font-family': 'SpoilerHE',
-      'font-size': 30px,
-    ),
-  ),
-  'mini_paragraph_title': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 22px,
-      'line-height': 1
-    )
-  ),
-  'fluid_text': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 18px,
-      'line-height': 1
-    )
-  ),
-  'mega_title': (
-    'nomedia': (
-      'font-family': 'SpoilerHE',
-      'font-size': 55px,
-      'line-height': 1
-    )
-  ),
-  'grid_main_titles': (
-    'nomedia': (
-            'font-family': 'SpoilerHE',
-            'font-size': 24px,
-            'line-height': 1,
-    ),
-    'small': (
-            'font-family': 'SpoilerHE',
-            'font-size': 20px,
-            'line-height': 1,
-    ),
-  ),
+        'body': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 16px,
+                        'line-height': 16px,
+                )
+        ),
+        'logo_font': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 22px,
+                        'line-height': 22px,
+                )
+        ),
+        'user-zone-tabs': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 19px,
+                        'line-height': 19px,
+                )
+        ),
+        'insurance-header': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 20px,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 17px,
+                        'line-height': 17px,
+                )
+        ),
+        'insurance-content': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 18px,
+                        'line-height': 18px,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 17px,
+                        'line-height': 17px,
+                )
+        ),
+        'large-page-header-title': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 55px,
+                        'line-height': 55px,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 35px,
+                        'line-height': 35px,
+                )
+        ),
+        'large-page-header-desc': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 26px,
+                        'line-height': 30px,
+                ),
+                'medium': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 22px,
+                        'line-height': 24px,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 24px,
+                )
+        ),
+        'search_intro': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 88px,
+                        'line-height': 80px,
+                ),
+                'large': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 70px,
+                        'line-height': 70px,
+                ),
+                'medium': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 60px,
+                        'line-height': 60px,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 50px,
+                        'line-height': 50px,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 35px,
+                        'line-height': 35px,
+                )
+        ),
+        'search_intro_sub': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 35px,
+                        'line-height': 35px,
+                ),
+                'large': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 30px,
+                        'line-height': 30px,
+                ),
+                'medium': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 28px,
+                        'line-height': 28px,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 24px,
+                        'line-height': 24px,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 18px,
+                        'line-height': 18px,
+                )
+        ),
+        'search_input': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 20px,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 16px,
+                        'line-height': 16px,
+                ),
+        ),
+        'logo_font2': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 20px,
+                ),
+                'xlarge': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 15px,
+                        'line-height': 15px,
+                )
+        ),
+        'revolution_grid_title': (
+                'nomedia': (
+                        'font-family': ('SpoilerHE', 'SpoilerEN'),
+                        'font-size': 28px,
+                        'line-height': 1,
+                ),
+                'large': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 25px,
+                        'line-height': 1,
+                ),
+                'medium': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 22px,
+                        'line-height': 1,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 22px,
+                        'line-height': 1,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 22px,
+                        'line-height': 1,
+                ),
+        ),
+        'revolution_grid_title_big': (
+                'nomedia': (
+                        'font-family': ('SpoilerHE', 'SpoilerEN'),
+                        'font-size': 40px,
+                        'line-height': 1,
+                ),
+                'large': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 32px,
+                        'line-height': 1,
+                ),
+                'medium': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 30px,
+                        'line-height': 1,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 28px,
+                        'line-height': 1,
+                ),
+                'Lsmall': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 28px,
+                        'line-height': 1,
+                ),
+        ),
+        'revolution_grid_text': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 1,
+                ),
+        ),
+        'how_its_works_grid_title': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 24px,
+                        'line-height': 1,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 1,
+                ),
+        ),
+        'how_its_works_title': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 48px,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 30px,
+                ),
+        ),
+        'mini_paragraph_title': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 22px,
+                        'line-height': 1
+                )
+        ),
+        'fluid_text': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 18px,
+                        'line-height': 1
+                )
+        ),
+        'mega_title': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 55px,
+                        'line-height': 1
+                )
+        ),
+        'grid_main_titles': (
+                'nomedia': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 24px,
+                        'line-height': 1,
+                ),
+                'small': (
+                        'font-family': 'SpoilerHE',
+                        'font-size': 20px,
+                        'line-height': 1,
+                ),
+        ),
 );
 

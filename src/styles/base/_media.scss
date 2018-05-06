@@ -1,4 +1,19 @@
 //  Large Breakpoint
+@include respond-above(main){
+  .wizard{
+    display:none;
+  }
+  .how-it-works{
+    display:none;
+  }
+  .search-results{
+    width:100%;
+  }
+  .test-wrapper{
+    width:100%;
+  }
+}
+
 @include respond-above(large) {
   .wizard {
     display: none;

@@ -49,6 +49,11 @@ body {
   min-height: 100%;
   position: relative;
 }
-@include font-face("SpoilerHE",'../fonts/fbspoilersp-regularwebfont',300,normal,woff)
-@include font-face("SpoilerHE",'../fonts/fbspoileren-bold-webfont',500,normal,woff)
+.test-wrapper{
+  margin:0 auto;
+  position:relative;
+  background: transparent;
+  top: -42px;
+  width:1100px;
+}
 

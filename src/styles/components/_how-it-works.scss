@@ -1,7 +1,9 @@
 .how-it-works {
   display: flex;
   width: 100%;
-  @include margin(-42px, -79px, 0, 0);
+  position:relative;
+  left:40px;
+  //@include margin(0, -79px, 0, 0);
   z-index: 55;
   border-radius: 10px 10px 0 0;
   background: $greyer-background;

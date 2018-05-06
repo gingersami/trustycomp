@@ -7,6 +7,8 @@ footer {
   color: white;
   @include text-align(center);
   .footer-copyright {
+    position:absolute;
+    bottom:0;
     background-color: $footer-background2;
     height: 40px;
     width: 100%;
