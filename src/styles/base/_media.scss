@@ -1,5 +1,5 @@
 //  Large Breakpoint
-@include respond-above(mlarge) {
+@include respond-above(large) {
   .wizard {
     display: none;
   }
