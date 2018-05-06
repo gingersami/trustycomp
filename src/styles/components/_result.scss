@@ -8,7 +8,6 @@
   flex-flow: row-reverse nowrap;
 }
 .result-header{
-  //margin: 19px 27.7% 0 auto;
   @include margin(19px, 27.7%,0,auto);
   p {
     color: $title1;
@@ -26,7 +25,6 @@
   width: 779px;
   height: 144px;
   @include margin(10px, 0, 2, 2px);
-  @include responsive-text-size('grid_main_titles');
   border: 1px solid $insurance-border;
   border-radius: 5px;
   &:first-child {
@@ -127,7 +125,6 @@
       margin: 0;
       font-size:35px;
       font-weight: 100;
-      //@include responsive-text-size('revolution_grid_text');
       @include padding-right(15px);
       @include margin(-3px,0,0,0);
     }

@@ -60,7 +60,8 @@ footer {
     border-radius: 30px;
     font-size: 14px;
     @include margin(-6px, 0, 0, 73px);
-    @include padding-right(45px);
+    @include padding(0,45px,0,0);
+    //@include padding-right(45px);
   }
 }
 
