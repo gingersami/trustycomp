@@ -88,10 +88,11 @@
 
 .header-wrapper {
   @include margin-center;
-  width: 1100px;
+  width: 70%;
   .header--title {
-    @include padding(0, 0, 0, 456px);
     font-weight: bold;
+      width:250px;
+      @include margin-center;
     h1 {
       @include responsive-text-size('large-page-header-title');
       font-weight: bold;

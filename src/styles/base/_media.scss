@@ -1,5 +1,5 @@
 //  Large Breakpoint
-@include respond-above(large) {
+@include respond-above(mlarge) {
   .wizard {
     display: none;
   }
@@ -131,10 +131,10 @@
       flex-direction: column-reverse;
       @include margin-center;
       //padding-top: 25px;
-      padding:0;
+      padding: 0;
       width: 73px;
-      margin-right:14%;
-      height:76px;
+      margin-right: 14%;
+      height: 76px;
     }
   }
   .company-description {
@@ -166,12 +166,12 @@
       .contact {
         margin-top: 0;
         padding: 0;
-        &>*{
+        & > * {
           text-align: center;
         }
-        .contact-text-input{
-          width:70%;
-          @include margin(-6px,0,0,0);
+        .contact-text-input {
+          width: 70%;
+          @include margin(-6px, 0, 0, 0);
         }
       }
       .main {
@@ -216,27 +216,27 @@
   }
 
   .result {
-    border-top:1px solid $insurance-border;
-    border-bottom:none;
-    border-left:none;
-    border-right:none;
+    border-top: 1px solid $insurance-border;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     border-radius: 0;
-    margin:0;
-    .result-header{
-      @include margin(19px,34%,0,auto);
+    margin: 0;
+    .result-header {
+      @include margin(19px, 34%, 0, auto);
     }
     .separator-xl {
       margin-top: 15px;
     }
-    &:last-child{
-      border-bottom:1px solid $insurance-border;
+    &:last-child {
+      border-bottom: 1px solid $insurance-border;
     }
-    .company-image-container{
+    .company-image-container {
       @include padding-right(10px);
     }
     .company-description {
-      &-payment{
-        padding:0;
+      &-payment {
+        padding: 0;
       }
       .company-description-text {
         display: none;
@@ -244,8 +244,8 @@
       .location-rating-wrapper {
         justify-content: space-around;
         margin-right: 13px;
-        .company-description-rating{
-          padding-top:0;
+        .company-description-rating {
+          padding-top: 0;
         }
       }
     }
@@ -256,23 +256,119 @@
       display: none;
     }
   }
-  .company-description-payment{
-    align-items: center;
+  .company-description-payment {
+    align-items: baseline;
+    height:70px;
+    align-self:flex-end;
     flex-direction: row-reverse;
   }
-  &-text{
-    .cost{
-      padding-right:28px;
+  &-text {
+    .cost {
+      padding-right: 28px;
     }
   }
 }
 
-@include respond-above(XMsmall){
-  .result{
-    .company-description-payment{
-      align-self:flex-end;
-      height:70px;
+@include respond-above(XMsmall) {
+  .result {
+    .company-description-payment {
+      align-self: flex-end;
+      height: 70px;
       align-items: baseline;
     }
+  }
+}
+
+@include respond-above(Xsmall) {
+  body{
+    height:1350px;
+  }
+  .header{
+    height:230px;
+    .header-wrapper{
+      .header--title{
+        margin-right:45%;
+      }
+    }
+  }
+  .content {
+
+    .search-results {
+
+      .search-results-filter {
+        display: flex;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 13px;
+
+        &-left {
+          font-size: inherit;
+          display: flex;
+          flex-direction: row;
+          direction: rtl;
+          padding-left: 14px;
+          padding-right: 0;
+
+        }
+
+        &-right {
+          padding-left: 13px;
+          padding-right: 2px;
+          display: flex;
+          flex-direction: row;
+          direction: rtl;
+          font-size: inherit;
+          .down-arrow {
+            margin-top: 4px;
+          }
+        }
+      }
+      .result {
+        height: 110px;
+        .result-header {
+          margin-right:27%;
+          font-size: 18px;
+        }
+        .separator-xl{
+          transform: scale(0.5);
+          margin-top:-8px;
+        }
+        .result-content {
+          .company-image-container {
+            min-width: 60px;
+            height: 70px;
+            margin-left: 0;
+            .company-image {
+              transform: scale(0.35);
+              left: -41px;
+              top: 19px;
+            }
+          }
+        }
+        .company-description {
+          .location-rating-wrapper {
+            transform: scale(0.7);
+          }
+        }
+        .company-description-payment {
+          &-text{
+            .cost{
+              font-size:30px;
+            }
+            p{
+              font-size:12px;
+            }
+          }
+
+          .purchase-container {
+            width:50px;
+            @include margin(9px, 3px, 23px, 7px);
+          }
+        }
+      }
+    }
+  }
+  .pagination{
+    width:100%;
   }
 }
