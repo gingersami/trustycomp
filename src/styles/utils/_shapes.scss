@@ -36,3 +36,10 @@
   height:1px;
   background: $color;
 }
+@mixin vertical-line($length,$color){
+  content:"";
+  display:block;
+  width: 1px;
+  height: $length;
+  background: $color;
+}

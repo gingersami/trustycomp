@@ -1,20 +1,48 @@
-//  Large Breakpoint
-@include respond-above(main){
-  .wizard{
-    display:none;
+//breakpoint for the main cutoff
+@include respond-above(main) {
+  .wizard {
+    display: none;
   }
-  .how-it-works{
-    display:none;
+  .how-it-works {
+    display: none;
   }
-  .search-results{
-    width:100%;
+  //.search-results {
+  //  width: 100%;
+  //}
+  //.test-wrapper {
+  //  width: 100%;
+  //}
+  .company-image-container {
+    flex: 1;
+    .company-image {
+      left: 7px;
+    }
   }
-  .test-wrapper{
+  .company-description {
+    flex: 3;
+    &-text {
+      align-self: flex-end;
+    }
+  }
+  .company-description-payment {
+    flex: 1;
+  }
+  .separator-xl {
+    display: none;
+  }
+  //.content{
+  //  width:100%;
+  //}
+  .content,.search-results,.test-wrapper{
     width:100%;
   }
 }
 
+//  Large Breakpoint
 @include respond-above(large) {
+  .separator-xl {
+    display: inline-block;
+  }
   .wizard {
     display: none;
   }
@@ -83,6 +111,7 @@
         display: none;
       }
     }
+
   }
 
   .results {
@@ -273,8 +302,8 @@
   }
   .company-description-payment {
     align-items: baseline;
-    height:70px;
-    align-self:flex-end;
+    height: 70px;
+    align-self: flex-end;
     flex-direction: row-reverse;
   }
   &-text {
@@ -295,14 +324,14 @@
 }
 
 @include respond-above(Xsmall) {
-  body{
-    height:1350px;
+  body {
+    height: 1350px;
   }
-  .header{
-    height:230px;
-    .header-wrapper{
-      .header--title{
-        margin-right:45%;
+  .header {
+    height: 230px;
+    .header-wrapper {
+      .header--title {
+        margin-right: 45%;
       }
     }
   }
@@ -341,12 +370,12 @@
       .result {
         height: 110px;
         .result-header {
-          margin-right:27%;
+          margin-right: 27%;
           font-size: 18px;
         }
-        .separator-xl{
+        .separator-xl {
           transform: scale(0.5);
-          margin-top:-8px;
+          margin-top: -8px;
         }
         .result-content {
           .company-image-container {
@@ -366,24 +395,24 @@
           }
         }
         .company-description-payment {
-          &-text{
-            .cost{
-              font-size:30px;
+          &-text {
+            .cost {
+              font-size: 30px;
             }
-            p{
-              font-size:12px;
+            p {
+              font-size: 12px;
             }
           }
 
           .purchase-container {
-            width:50px;
+            width: 50px;
             @include margin(9px, 3px, 23px, 7px);
           }
         }
       }
     }
   }
-  .pagination{
-    width:100%;
+  .pagination {
+    width: 100%;
   }
 }
