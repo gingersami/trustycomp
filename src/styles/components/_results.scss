@@ -1,9 +1,32 @@
 .results{
   display:flex;
+  position:relative;
   width:100%;
   background: transparent;
   border-radius: 10px;
   @include margin-center;
   align-items: center;
   justify-content: center;
+  &:after{
+    content: '';
+    width: 805px;
+    position: absolute;
+    height: 44px;
+    background: #44d3e6;
+    left: -804px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+    bottom: 28px;
+  }
+  &:before{
+    content: '';
+    width: 805px;
+    position: absolute;
+    height: 44px;
+    background: #44d3e6;
+    right: -804px;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
+    bottom: 28px;
+  }
 }

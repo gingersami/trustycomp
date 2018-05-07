@@ -1,8 +1,31 @@
 //breakpoint for the main cutoff
 @include respond-above(main) {
-  .header{
-    .interactive-row{
-      width:100%;
+  .header {
+    .interactive-row {
+      background-color: white;
+      width: 100%;
+      .icons-left {
+        .compie-logo{
+          margin-left:11px;
+          margin-top:11px;
+          padding-top:9px;
+          font-size:24px;
+          color:white;
+        }
+        .icon--user,.separator,.icon--mail{
+          display:none;
+        }
+      }
+      .icons-right {
+        top:3px;
+        width: 55px;
+        .hamburger {
+          display: inline-block;
+        }
+        .icon--glass, .separator-right, .down-arrow, .user-zone-selector, .sofa, .compie-logo {
+          display: none;
+        }
+      }
     }
   }
   .wizard {
@@ -11,7 +34,7 @@
   .how-it-works {
     display: none;
   }
-   .company-image-container {
+  .company-image-container {
     flex: 1;
     .company-image {
       left: 7px;
@@ -29,11 +52,11 @@
   .separator-xl {
     display: none;
   }
-  .content,.search-results,.content-wrapper,.wrapper{
-    width:100%;
+  .content, .search-results, .content-wrapper, .wrapper {
+    width: 100%;
   }
-  .search-results-header{
-      border-radius:0;
+  .search-results-header {
+    border-radius: 0;
   }
 }
 
@@ -94,13 +117,16 @@
   .header {
     height: 290px;
     .interactive-row {
-      display: none;
+      //display: none;
     }
     &-wrapper {
       width: 70vw;
-      padding-top: 50px;
+      //padding-top: 50px;
       .header--text {
         display: none;
+      }
+      .car-logo-text{
+        padding-top:0;
       }
     }
     .header--title {
@@ -124,7 +150,7 @@
     .contact {
       width: 260px;
       input {
-        padding:0;
+        padding: 0;
         width: 240px;
       }
     }

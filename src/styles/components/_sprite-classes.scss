@@ -105,12 +105,18 @@ div[class^="arrow-"] {
   @include retina-sprite($sp-google-group)
 }
 
-.plus{
-  display:inline-block;
+.plus {
+  display: inline-block;
   @include retina-sprite($sp-plus-group)
 }
 
-.down-arrow-gray{
-  display:inline-block;
+.down-arrow-gray {
+  display: inline-block;
   @include retina-sprite($sp-down-arrow-gray-group)
+}
+
+.hamburger {
+  display: inline-block;
+  transform: scale(0.4);
+  @include retina-sprite($sp-hamburger-group);
 }
