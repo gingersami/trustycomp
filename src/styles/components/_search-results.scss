@@ -51,7 +51,6 @@
           color:$red-brighter-hover;
         .area-filter{
           display:flex;
-          left:17px;
         }
       }
       .down-arrow {
@@ -94,6 +93,7 @@
   z-index:2;
   top:35px;
   display:none;
+  left:18px;
   font-weight: 100;
   font-size:19px;
   color:$title2;
@@ -104,12 +104,12 @@
   @include text-align(right);
   &>div{
     padding-bottom:5px;
-    padding-right:20px;
+    padding-right:10px;
     &:hover{
     color:$red-brighter-hover;
     }
     &:first-child{
-      padding-top:2px;
+      padding-top:4px;
     }
     &:not(:last-child):after{
       @include horizontal-line(140px,$insurance-border);
@@ -131,17 +131,18 @@
   align-items:flex-end;
   flex-flow: column nowrap;
   height:70px;
-  width:167px;
+  width:172px;
   @include text-align(right);
   &>.option{
     padding-bottom:5px;
-    padding-right:20px;
+    padding-right:10px;
     &:first-child{
       padding-top:2px;
     }
     &:not(:last-child):after{
-      @include horizontal-line(140px,$insurance-border);
+      @include horizontal-line(145px,$insurance-border);
       margin-top:10px;
+
     }
   }
 }

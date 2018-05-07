@@ -6,12 +6,22 @@
   grid-template-columns: repeat(7,40px) ;
   grid-template-rows: repeat(8,30px);
   &--select{
+    justify-content: space-around;
+    padding-top:20px;
+    font-size:24px;
     grid-row:1 / 3;
     grid-column: 1 /8 ;
+    display:flex;
   }
   &--days{
+    display:flex;
+    justify-content:space-around;
     grid-row:3/3;
     grid-column: 1/8;
+    .day{
+      padding-top:6px;
+      
+    }
   }
 }
 .arrow_right{
