@@ -33,7 +33,7 @@
   //.content{
   //  width:100%;
   //}
-  .content,.search-results,.test-wrapper{
+  .content,.search-results,.content-wrapper{
     width:100%;
   }
 }
@@ -124,6 +124,7 @@
     .contact {
       width: 260px;
       input {
+        padding:0;
         width: 240px;
       }
     }
@@ -215,7 +216,7 @@
         }
         .contact-text-input {
           width: 70%;
-          @include margin(-6px, 0, 0, 0);
+          @include margin(-17px, 0, 0, 0);
         }
       }
       .main {
