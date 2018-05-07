@@ -5,11 +5,33 @@
   height: 360px;
   @include responsive-text-size('body');
   background-color: $startHere;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 305px;
+    left: 0;
+    display: block;
+    width: 19.8%;
+    height: 59px;
+    border-bottom-right-radius: 10px;
+    background-color: $startHere;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 305px;
+    right: 0;
+    display: block;
+    width: 19.8%;
+    height: 59px;
+    border-bottom-left-radius: 10px;
+    background-color: $startHere;
+  }
   .interactive-row {
     position: relative;
     text-align: center;
     margin: 0 auto;
-    width: 70%;
+    width: 1100px;
     height: 60px;
     .icons-left {
       position: absolute;
@@ -105,28 +127,6 @@
         margin: 0;
       }
     }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 305px;
-      left: 0;
-      display: block;
-      width: 411px;
-      height: 59px;
-      border-bottom-right-radius: 10px;
-      background-color: $startHere;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      top: 305px;
-      right: 0;
-      display: block;
-      width: 333px;
-      height: 59px;
-      border-bottom-left-radius: 10px;
-      background-color: $startHere;
-    }
   }
 
   .header--text {
@@ -137,7 +137,6 @@
     text-align: center;
     line-height: 5px;
     margin-top: -4px;
-    @include padding(0, 0, 0, 80px);
   }
 }
 

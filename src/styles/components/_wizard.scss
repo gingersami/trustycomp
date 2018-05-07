@@ -14,7 +14,7 @@
     @include padding-right(9px);
     &::after {
       @include margin(13px, 0, 0, 3px);
-      @include line(307px, $insurance-border);
+      @include horizontal-line(307px, $insurance-border);
     }
   }
   &-text {
@@ -104,7 +104,6 @@
     color: $title2;
     direction: rtl;
     margin: auto;
-    //padding-top: 21px;
     width: 164px;
   }
 

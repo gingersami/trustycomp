@@ -1,18 +1,17 @@
 //breakpoint for the main cutoff
 @include respond-above(main) {
+  .header{
+    .interactive-row{
+      width:100%;
+    }
+  }
   .wizard {
     display: none;
   }
   .how-it-works {
     display: none;
   }
-  //.search-results {
-  //  width: 100%;
-  //}
-  //.test-wrapper {
-  //  width: 100%;
-  //}
-  .company-image-container {
+   .company-image-container {
     flex: 1;
     .company-image {
       left: 7px;
@@ -30,11 +29,11 @@
   .separator-xl {
     display: none;
   }
-  //.content{
-  //  width:100%;
-  //}
-  .content,.search-results,.content-wrapper{
+  .content,.search-results,.content-wrapper,.wrapper{
     width:100%;
+  }
+  .search-results-header{
+      border-radius:0;
   }
 }
 
@@ -88,6 +87,7 @@
           border: 1px solid $insurance-border
         }
       }
+
     }
   }
 

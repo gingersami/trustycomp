@@ -29,7 +29,7 @@
   }
 }
 
-@mixin line($length, $color){
+@mixin horizontal-line($length, $color){
   content:"";
   display:block;
   width:$length;
