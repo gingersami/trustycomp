@@ -85,7 +85,13 @@
                 <div class="search-results-filter">
                     <div class="search-results-filter-right">
                         <span class="sort-by">מיין לפי:</span>
-                        <span class="filter-option">מחיר נמוך לגבוה</span>
+                        <div class="filter-option">
+                            מחיר נמוך לגבוה
+                            <div class="sort-filter">
+                                <div class="option">מחיר מהגבוה לנמוך</div>
+                                <div class="option">מחיר מהנמוך לגבוה</div>
+                            </div>
+                        </div>
                         <div class="down-arrow"></div>
                         <div class="separator-short"></div>
                         <span class="agent-rating">דירוג סוכן</span>
@@ -94,7 +100,16 @@
                     </div>
                     <div class="search-results-filter-left">
                         <div class="separator-long"></div>
-                        <p>סינון לפי אזור: כל האזורים</p>
+                        <div class="filter-by-area">
+                            סינון לפי אזור: כל האזורים
+
+                            <div class="area-filter">
+                                <div class="">כל האזורים</div>
+                                <div class="">תל אביב</div>
+                                <div class="">ירושלים</div>
+                                <div class="">חיפה</div>
+                            </div>
+                        </div>
                         <div class="down-arrow"></div>
                     </div>
                 </div>
@@ -521,9 +536,9 @@
                     </div>
                     <div class="wizard-selectors-type selector">
 
-                        <select name="date">
-                            <option value="">תאריך תחילת הביטוח</option>
-                        </select>
+                        <div name="date" class="tt">
+                            תאריך תחילת הביטוח
+                        </div>
                         <div class="calendar"></div>
 
                     </div>
@@ -564,6 +579,7 @@
                     <div class="question question-1">
                         <p class="question-text">האם היה לך ביטוח מקיף או רכב ליסינג ב-3 השנים האחרונות?</p>
                         <div class="answers">
+
                             <div class="answer"><p class="answer-text">לא</p></div>
                             <div class="answer"><p class="answer-text">כן</p></div>
                         </div>

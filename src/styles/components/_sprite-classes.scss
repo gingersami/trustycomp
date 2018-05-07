@@ -120,3 +120,11 @@ div[class^="arrow-"] {
   transform: scale(0.4);
   @include retina-sprite($sp-hamburger-group);
 }
+
+.arrow_right{
+  @include retina-sprite($sp-arrow-left-group);
+}
+
+.arrow_left{
+  @include retina-sprite($sp-arrow-left-group);
+}

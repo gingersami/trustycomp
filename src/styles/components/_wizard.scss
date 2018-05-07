@@ -1,5 +1,5 @@
 .wizard {
-    display: inline-flex;
+  display: inline-flex;
   color: $title2;
   @include text-align('right');
   flex-direction: column;
@@ -8,9 +8,9 @@
   height: 1500px;
   &-header {
     color: $mobile;
-    letter-spacing:.4px;
-    font-size:22px;
-    margin-top:9px;
+    letter-spacing: .4px;
+    font-size: 22px;
+    margin-top: 9px;
     @include padding-right(9px);
     &::after {
       @include margin(13px, 0, 0, 3px);
@@ -18,20 +18,20 @@
     }
   }
   &-text {
-    width:255px;
+    width: 255px;
     font-weight: 100;
     color: inherit;
     white-space: normal;
     font-size: 17px;
-    align-self:flex-end;
-    @include padding(0,10px,0,0);
-    margin-top:-10px;
-    line-height:22px;
+    align-self: flex-end;
+    @include padding(0, 10px, 0, 0);
+    margin-top: -10px;
+    line-height: 22px;
   }
   &-questions {
     white-space: normal;
     font-size: 15px;
-    @include margin(32px,8px,0,0);
+    @include margin(32px, 8px, 0, 0);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -55,25 +55,40 @@
     background: #ffffff;
     border-radius: 3px;
     font-size: 17px;
-    font-weight:100;
-  @include padding(0,14px,0,0);
+    font-weight: 100;
+    @include padding(0, 14px, 0, 0);
+  }
+  .selector>.tt{
+    direction: rtl;
+    color: $title2;
+    height: 39px;
+    width: 267px;
+    border: 1px solid $insurance-border;
+    background: #ffffff;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 100;
+    @include padding(9px, 14px, 0, 0);
   }
 }
 
 .selector {
   position: relative;
   height: 39px;
-  @include margin(0,10px,9px,0);
+  @include margin(0, 10px, 9px, 0);
   width: 273px;
-  &:first-child{
-    .down-arrow-gray{
-      top:18px;
+  &:first-child {
+    .down-arrow-gray {
+      top: 18px;
     }
   }
-  .down-arrow-gray{
-    position:absolute;
-    top:17px;
-    left:21px;
+    &:nth-child(2){
+      @include margin(0,4px,9px,0)
+    }
+  .down-arrow-gray {
+    position: absolute;
+    top: 17px;
+    left: 21px;
   }
   .plus {
     position: absolute;
@@ -93,7 +108,7 @@
   height: 80px;
   font-size: 17px;
   font-weight: 100;
-  line-height:18px;
+  line-height: 18px;
   flex-direction: row-reverse;
   border-bottom: 1px solid $insurance-border;
   &:first-child {
@@ -118,13 +133,22 @@
       color: $title2;
       margin-top: 11px;
     }
+  &:hover{
+    border:3px solid $insurance-border;
   }
+  }
+}
+
+.selected{
+  background-color: darken(#f8fcfe, 90%);
 }
 
 .answers {
   display: block;
-  padding-right:18px;
+  padding-right: 18px;
+  height:60px;
   margin-top: 19px;
   justify-content: space-between;
   width: 100px;
 }
+

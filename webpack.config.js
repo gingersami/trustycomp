@@ -50,7 +50,7 @@ module.exports = {
         path: `${__dirname}/dist`,
         filename: '[name].js',
     },
-    devtool:'inline-source-map',
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -154,10 +154,15 @@ module.exports = {
         extensions: ['.js', '.vue', '.json'],
         modules: ['node_modules', 'spritesmith-generated', 'bower_components'],
         alias: {
+            jquery:'jquery/src/jquery',
             'vue$': 'vue/dist/vue.esm.js'
         }
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         new CleanWebpackPlugin('./dist'),
         new SpritesmithPlugin({
             src: {
@@ -181,6 +186,7 @@ module.exports = {
         new WriteFilePlugin({
             test: /\.css$/,
         }),
-        new webpack.optimize.UglifyJsPlugin(),
+        // new webpack.optimize.UglifyJsPlugin(),
+
     ],
 };

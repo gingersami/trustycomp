@@ -18,7 +18,14 @@
     border: 1px solid $insurance-border;
     border-radius: 0 0 5px 5px;
     .filter-option {
+      display:inline-block;
+      height:200px;
       color: $red-brighter;
+        &:hover{
+          .sort-filter{
+            display:flex;
+          }
+        }
     }
     &-right {
       position: absolute;
@@ -26,6 +33,11 @@
       @include right(17px);
       .down-arrow {
         @include margin(0, 3px, 2px, 0);
+      }
+      div:hover,span:hover{
+        &:not(.sort-by,.sort-filter){
+        color:$red-brighter-hover;
+        }
       }
     }
     &-left {
@@ -35,6 +47,13 @@
       width: 185px;
       @include left(-8px);
       top: 11px;
+      .filter-by-area:hover{
+          color:$red-brighter-hover;
+        .area-filter{
+          display:flex;
+          left:17px;
+        }
+      }
       .down-arrow {
         margin-top: 5px;
         @include margin-right(-10px)
@@ -42,7 +61,8 @@
       .separator-long {
         @include margin(0, 0, 0, -10px);
       }
-      p {
+      .filter-by-area {
+        height:200px;
         @include margin(2px, 19px, 2px, 19px);
       }
     }
@@ -66,4 +86,62 @@
 
 .sort-by {
   padding-left: 6px;
+}
+
+.area-filter{
+  @extend %filter-selector;
+  position:absolute;
+  z-index:2;
+  top:35px;
+  display:none;
+  font-weight: 100;
+  font-size:19px;
+  color:$title2;
+  align-items:flex-end;
+  flex-flow: column nowrap;
+  height:131px;
+  width:167px;
+  @include text-align(right);
+  &>div{
+    padding-bottom:5px;
+    padding-right:20px;
+    &:hover{
+    color:$red-brighter-hover;
+    }
+    &:first-child{
+      padding-top:2px;
+    }
+    &:not(:last-child):after{
+      @include horizontal-line(140px,$insurance-border);
+      margin-top:10px;
+    }
+  }
+}
+
+.sort-filter{
+  @extend %filter-selector;
+  position:absolute;
+  z-index:2;
+  top:35px;
+  right:-5px;
+  display:none;
+  font-weight: 100;
+  font-size:19px;
+  color:$title2;
+  align-items:flex-end;
+  flex-flow: column nowrap;
+  height:70px;
+  width:167px;
+  @include text-align(right);
+  &>.option{
+    padding-bottom:5px;
+    padding-right:20px;
+    &:first-child{
+      padding-top:2px;
+    }
+    &:not(:last-child):after{
+      @include horizontal-line(140px,$insurance-border);
+      margin-top:10px;
+    }
+  }
 }
